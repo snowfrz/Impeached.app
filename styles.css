@@ -1,0 +1,82 @@
+body {
+    background-color: #29CEDF;
+    width: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    background-color: #365A5E;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.headerContainer {
+    margin: 0;
+    padding: 0;
+}
+
+#headerImage {
+    content: url("Base.png");
+}
+
+#comingSoon {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.announcementBar {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+    background-color: #365A5E;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    margin: 0;
+}
+
+.bottomPart {
+    background-color: #62D4E0;
+    margin: 0;
+    padding: 15px;
+}
+
+.linkContainer {
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+}
+
+.linkContainer a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    background-color: #5E9FA6;
+}
+
+.linkContainer a:hover {
+    background-color: #51C1CD;
+}
+
+@media (max-width: 600px) {
+    .linkContainer {
+        flex-direction: column;
+    }
+
+    #comingSoon {
+        font-size: 20px;
+    }
+
+    #headerImage {
+        content: url("Library.png");
+    }
+}
