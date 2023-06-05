@@ -1,6 +1,6 @@
 @font-face {
     font-family: munro;
-    src: url(munro_small.ttf);
+    src: url("munro_small.ttf");
 }
 
 body {
@@ -147,7 +147,6 @@ footer {
         text-align: center;
         font-size: 0.75em;
         padding: 20px;
-        /* width: 100%; */
     }
 
     .ssContainer {
