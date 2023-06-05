@@ -28,7 +28,7 @@ footer {
 }
 
 #comingSoon {
-    font-size: 30px;
+    font-size: 2.5em;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -86,12 +86,13 @@ footer {
     font-size: 4em;
     margin: -10px 0px 0px 0px;
     text-shadow: #c9c9c960 0px 0px 5px;
+    font-weight: normal;
 }
 
 .textHeader p {
     margin: 0;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .features {
@@ -188,7 +189,7 @@ footer {
     }
 
     #comingSoon {
-        font-size: 20px;
+        font-size: 1.75em;
     }
 
     #headerImage {
