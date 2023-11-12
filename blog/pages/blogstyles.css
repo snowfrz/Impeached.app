@@ -168,13 +168,7 @@ footer a:hover {
         flex-direction: column;
         width: 100%;
     }
-
-    .featureContainer p {
-        text-align: center;
-        font-size: 0.75em;
-        padding: 20px;
-    }
-
+    
     .ssContainer {
         width: 100%;
     }
