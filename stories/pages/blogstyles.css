@@ -168,6 +168,10 @@ footer a:hover {
         flex-direction: column;
         width: 100%;
     }
+
+    .featureContainer p {
+        font-size: 0.5em;
+    }
     
     .ssContainer {
         width: 100%;
@@ -203,6 +207,6 @@ footer a:hover {
     }
 
     #headerImage {
-        content: url("Library.png");
+        content: url("../../Library.png");
     }
 }
