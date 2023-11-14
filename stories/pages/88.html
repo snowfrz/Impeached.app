@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supreme Court Justices Dust Off Old Rules of Thumb to Win Political Gamble</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Supreme Court Justices Dust Off Old Rules of Thumb to Win Political Gamble" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Supreme Court Justices Dust Off Old Rules of Thumb to Win Political Gamble" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("88");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Supreme Court Justices Dust Off Old Rules of Thumb to Win Political Gamble</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>In a shocking turn of events, the <a href="16.html">Supreme Court</a> has revealed that it has been secretly using ancient rules of thumb to influence the outcome of political games. The court, known for its landmark decisions and impeccable legal reasoning, has been quietly relying on time-tested strategies to gain the upper hand in political negotiations.</p>
+<p>According to sources within the court, the Justices have been studying the art of "kishkes" – a centuries-old Jewish game of strategy and deception – to outmaneuver their political opponents. "It's all about using the right combination of moves to outsmart your opponent," said one Justice, who wished to remain anonymous. "It's not just about winning, it's about winning with style and grace."</p>
+<p>The court's use of historical strategies has been particularly useful in the current political climate, where partisan divisions run deep and compromise is often seen as a dirty word. By drawing on the wisdom of the ages, the Justices have been able to navigate the treacherous waters of political negotiations with ease.</p>
+<p>But not everyone is pleased with the court's newfound interest in historical strategy. Some have criticized the move as a cynical attempt to manipulate the political process for personal gain. "It's a clear abuse of power," said one political analyst. "The <a href="72.html">Supreme Court</a> is supposed to be above politics, not playing games of chance with the fate of the nation."</p>
+<p>Despite the criticism, the court remains undeterred, confident in its ability to outmaneuver its opponents using the ancient rules of thumb. As one Justice put it, "We may not be able to predict the future, but we can certainly shape it with the right moves."</p>
+<p>With the political stakes higher than ever, the <a href="39.html">Supreme Court</a>'s use of historical strategy is likely to become a key factor in the nation's political landscape. Whether it's a bold move or a blunder, only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="89.html">Previous</a>
+            |
+            <a href="87.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

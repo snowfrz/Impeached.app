@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Constitutional Showdown: Can Strategy Games Save the Economy?</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Constitutional Showdown: Can Strategy Games Save the Economy?" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Constitutional Showdown: Can Strategy Games Save the Economy?" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("78");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Constitutional Showdown: Can Strategy Games Save the Economy?</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a bold move to address the current economic downturn, a group of politicians have turned to an unlikely source for inspiration: <a href="44.html">strategy games</a>. Yes, you read that right. <a href="57.html">Constitution</a>al Showdown, the latest political thriller to hit the halls of power, is more than just a game of chance - it's a tool for saving the economy.</p>
+<p>At a press conference yesterday, House Speaker Nancy "The Great" (Name Changed) announced the launch of the "<a href="20.html">Constitution</a>al Strategy Game Initiative," a program designed to put the country's top lawmakers in the shoes of game developers. "We need to think outside the box," Speaker Nancy declared, "and what better way to do that than by embracing the spirit of competition and strategy that has defined this great nation since its inception?"</p>
+<p>The game, which is set to release in the coming weeks, challenges players to navigate a series of economic crisis scenarios, using their wits and diplomatic skills to find solutions that are both constitutional and economically viable. "It's not just about winning," Speaker Nancy emphasized, "it's about learning from the game and applying those lessons to the real world."</p>
+<p>The move has been met with mixed reactions from fellow lawmakers, with some hailing the initiative as a stroke of genius and others muttering darkly about the dangers of "<a href="16.html">gaming</a> the system." But one thing is clear: the stakes are high, and the fate of the economy hangs in the balance. Will the <a href="74.html">strategy games</a> be the salvation the country needs, or will they simply amount to a bunch of hot air? Only time (and a lot of luck) will tell.</p>
+<p>In the meantime, the public is invited to try their hand at the game, which can be played online or in-person at designated "<a href="12.html">Constitution</a>al Strategy Centers" across the nation. "This is not just a game," Speaker Nancy urged, "it's a call to action. Together, we can show the world what it means to be a true American - a master of the strategy game."</p>
+<p>So grab your dice, sharpen your diplomacy skills, and get ready to save the economy! (Or at the very least, have a few laughs trying.) <a href="65.html">Constitution</a>al Showdown: the game that could change the course of history - or at the very least, provide some much-needed distraction from the latest political scandal.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="79.html">Previous</a>
+            |
+            <a href="77.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
