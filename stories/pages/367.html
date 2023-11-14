@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supreme Shock: Court Sets Historic Precedent for Future of Freedom in the United States!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Supreme Shock: Court Sets Historic Precedent for Future of Freedom in the United States!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Supreme Shock: Court Sets Historic Precedent for Future of Freedom in the United States!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("367");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Supreme Shock: Court Sets Historic Precedent for Future of Freedom in the United States!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a stunning turn of events, the <a href="293.html">Supreme Court</a> has issued a landmark ruling that will have far-reaching implications for the future of <a href="270.html">freedom</a> in the <a href="120.html">United States</a>. In a unanimous decision, the Court has declared that the right to <a href="260.html">freedom</a> is no longer a fundamental right, but rather a privilege that can be granted or revoked by the government at will.</p>
+<p>"This decision is a game-changer," said Chief Justice John Smith. "For too long, we have been constrained by the idea that <a href="255.html">freedom</a> is an inalienable right. But we have seen the error of our ways. Freedom is not a natural right, but rather a tool that can be used and abused. It is time to take a more pragmatic approach to this issue."</p>
+<p>The decision was met with widespread shock and outrage, with many constitutional scholars and civil liberties groups calling it a "slap in the face" to the principles of democracy and individual liberty. But the Court was unmoved, insisting that the decision was necessary to protect the greater good.</p>
+<p>"In a world where the future is uncertain, we must be willing to make hard choices," said Justice Jane Doe. "Sacrificing some of our <a href="6.html">freedom</a>s for the greater good is a small price to pay for the stability and security that comes with a strong, centralized government."</p>
+<p>The decision has already been hailed as a historic precedent, with many predicting that it will pave the way for a new era of authoritarianism in the <a href="99.html">United States</a>. But the Court remains undeterred, insisting that it is simply "adapting to the times."</p>
+<p>"We are not living in the same world that our founding fathers did," said Justice Bob Johnson. "Their ideas about <a href="53.html">freedom</a> and democracy were noble, but they were also naive. In the 21st century, we must be willing to do what it takes to keep our country safe and prosperous."</p>
+<p>As the dust settles on this landmark ruling, one thing is clear: the future of <a href="2.html">freedom</a> in the <a href="118.html">United States</a> will never be the same.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="368.html">Previous</a>
+            |
+            <a href="366.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
