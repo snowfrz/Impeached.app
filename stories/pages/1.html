@@ -3,26 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>House of Representatives Turns to Strategy Games for Political Edge</title>
+    <title>Congress Moves to Restrict Political Corruption, but Freedom Advocates Cry Foul</title>
     <link rel="stylesheet" href="blogstyles.css">
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
 
-    <meta property="og:title" content="House of Representatives Turns to Strategy Games for Political Edge" />
+    <meta property="og:title" content="Congress Moves to Restrict Political Corruption, but Freedom Advocates Cry Foul" />
     <meta property="og:description" content="An Impeached 2 Story" />
     <meta property="og:image" content="https://www.impeached.app/Base.png" />
     <meta property="og:url" content="https://www.impeached.app/" />
 
-    <meta name="twitter:title" content="House of Representatives Turns to Strategy Games for Political Edge" />
+    <meta name="twitter:title" content="Congress Moves to Restrict Political Corruption, but Freedom Advocates Cry Foul" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="An Impeached 2 Story" />
     <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
     <meta name="twitter:site" content="@JustinAlexP" />
     <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("1");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
 </head>
 
-<body>
+<body onload="addControls()">
     <div class="headerContainer">
-        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%" style="display: block;margin: 0" /></a>
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
     </div>
 
     <div class="announcementBar">
@@ -41,25 +72,39 @@
         <h1>Impeached 2</h1>
         <p>Become President of the United States in this political satire strategy game</p>
     </div>
-    
+
     <div class="features" id="feed">
-        <h1>House of Representatives Turns to Strategy Games for Political Edge</h1>
+        <h1>Congress Moves to Restrict Political Corruption, but Freedom Advocates Cry Foul</h1>
         <div class="featureContainer">
             <div class="textContainer" style="width: 100%; text-align: left;">
-                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a href="../../get.html">Play today!</a></p>
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
                 <p></p>
-<p>WASHINGTON D.C. - In a shocking turn of events, the House of Representatives has announced that it will be incorporating strategy games into its political operations. The move is intended to give the legislative body a much-needed edge in the increasingly competitive political landscape.</p>
-<p>According to sources within the House, the new strategy games will be used to improve decision-making, problem-solving, and critical thinking skills among members. The games, which will be played during weekly meetings, will range from classic board games like Risk and Monopoly to more modern titles like Catan and Settlers of Catan.</p>
-<p>"We recognize that the political landscape is constantly evolving, and we need to stay ahead of the curve," said House Speaker Nancy "The Game-Changer" Pelosi. "By incorporating strategy games into our operations, we can better prepare ourselves for the challenges that lie ahead."</p>
-<p>The new policy has been met with mixed reactions from members of the House. Some see it as a valuable tool for improving collaboration and communication among colleagues, while others view it as a distraction from more pressing legislative issues.</p>
-<p>"I'm not sure I'm comfortable with this," said Representative Kevin "The King of the Board" McCarthy. "I've been known to get a little competitive, and I don't want to end up in a game of 'Risk' with my colleagues."</p>
-<p>Despite the reservations of some members, the new policy is expected to be implemented in the coming weeks. The House has already begun reaching out to game manufacturers and distributors to secure the necessary materials.</p>
-<p>"We're not just talking about your run-of-the-mill board games here," said Pelosi. "We're talking about cutting-edge strategy games that will really challenge our minds and test our mettle."</p>
-<p>As the House of Representatives turns to strategy games for a political edge, one thing is certain: the world of politics is about to get a whole lot more interesting. Will these games give the House the upper hand in the political arena? Only time will tell.</p>
-                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached 2</a> and become President of the U.S. today!</p>
-                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only for entertainment purposes.</p>
+<p>Washington D.C. - In a surprise move, Congress has announced plans to implement a sweeping new bill aimed at combating political corruption. The legislation, which has been met with widespread support from the public, would require all politicians to disclose their personal financial information and impose strict limits on campaign donations.</p>
+<p>However, not everyone is celebrating the proposed legislation. Freedom advocates have come out in droves to protest the bill, claiming that it infringes on their right to free speech and freedom of assembly.</p>
+<p>"This bill is a thinly veiled attempt to stifle dissent and restrict our ability to participate in the democratic process," said a spokesperson for the American Civil Liberties Union. "We will not stand idly by while Congress tramples on our fundamental rights."</p>
+<p>But supporters of the bill say that it is necessary to prevent corruption and ensure that politicians are held accountable for their actions.</p>
+<p>"We have seen time and time again that the current system is broken and allows for rampant corruption," said the bill's sponsor, Senator John Q. Public. "This legislation will help to restore trust in government and ensure that our elected officials are working in the best interests of the people."</p>
+<p>As the debate rages on, one thing is clear: this bill has the potential to be a game-changer in the political landscape. But only time will tell if it will be able to overcome the opposition and become law.</p>
+<p>In related news, a new war in the Middle East has been announced, with reports of numerous civilian casualties. The conflict is said to be in response to a recent attack on a major military base, which was blamed on a terrorist organization.</p>
+<p>"This is a clear and present danger to our national security," said President James E. Faces. "We will not stand idly by while these terrorists threaten our way of life."</p>
+<p>But critics of the war say that it is a thinly veiled attempt to distract from the political corruption scandal and maintain the status quo.</p>
+<p>"This war is a political strategy, plain and simple," said a spokesperson for the anti-war movement. "It's a way for the government to justify its actions and maintain control over the population."</p>
+<p>Only time will tell if this bill will be able to overcome the opposition and become law. But one thing is for sure: the political landscape is about to change in a major way.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
             </div>
         </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="2.html">Previous</a>
+            |
+            <a href="0.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
     </div>
 </body>
 

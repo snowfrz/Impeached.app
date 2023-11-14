@@ -3,26 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Congress Probes New Senate Political Strategy in Wake of Supreme Court Ruling</title>
+    <title>Republicans Unveil New Strategy Game to Defend Impeached Leader</title>
     <link rel="stylesheet" href="blogstyles.css">
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
 
-    <meta property="og:title" content="Congress Probes New Senate Political Strategy in Wake of Supreme Court Ruling" />
+    <meta property="og:title" content="Republicans Unveil New Strategy Game to Defend Impeached Leader" />
     <meta property="og:description" content="An Impeached 2 Story" />
     <meta property="og:image" content="https://www.impeached.app/Base.png" />
     <meta property="og:url" content="https://www.impeached.app/" />
 
-    <meta name="twitter:title" content="Congress Probes New Senate Political Strategy in Wake of Supreme Court Ruling" />
+    <meta name="twitter:title" content="Republicans Unveil New Strategy Game to Defend Impeached Leader" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="An Impeached 2 Story" />
     <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
     <meta name="twitter:site" content="@JustinAlexP" />
     <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("11");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
 </head>
 
-<body>
+<body onload="addControls()">
     <div class="headerContainer">
-        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%" style="display: block;margin: 0" /></a>
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
     </div>
 
     <div class="announcementBar">
@@ -41,23 +72,35 @@
         <h1>Impeached 2</h1>
         <p>Become President of the United States in this political satire strategy game</p>
     </div>
-    
+
     <div class="features" id="feed">
-        <h1>Congress Probes New Senate Political Strategy in Wake of Supreme Court Ruling</h1>
+        <h1>Republicans Unveil New Strategy Game to Defend Impeached Leader</h1>
         <div class="featureContainer">
             <div class="textContainer" style="width: 100%; text-align: left;">
-                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a href="../../get.html">Play today!</a></p>
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
                 <p></p>
-<p>Washington D.C. - In a shocking turn of events, Congress has launched an investigation into a new <a href="10.html">political strategy</a> being employed by the Senate in the wake of a recent <a href="8.html">Supreme Court</a> ruling. Sources close to the investigation have revealed that the strategy, which involves the use of cats as legislative aids, has raised serious concerns among lawmakers.</p>
-<p>According to insiders, the Senate has been secretly training a group of feline advisors, each equipped with their own unique set of skills and talents. These include a cat named "Mr. Whiskers" who is said to be a master of persuasion, a cat named "Luna" who is rumored to have psychic abilities, and a cat named "Sparky" who is believed to possess a supernatural ability to make anyone do its bidding.</p>
-<p>The cats, who have been given special collars that allow them to access the Senate's computer systems, have been working closely with lawmakers to draft and pass legislation. While some have praised the innovative approach, others have expressed concern about the potential for cat-related mishaps.</p>
-<p>"I don't know if this is something we should be taking seriously," said one congressional staffer on condition of anonymity. "I mean, cats are great and all, but do they really have the cognitive abilities to understand complex policy issues?"</p>
-<p>Despite these reservations, the Senate continues to push forward with its feline-led <a href="3.html">political strategy</a>. In a statement, a spokesperson for the Senate majority leader said, "We are confident that our feline advisors will help us achieve greater heights of legislative success. After all, who knows more about purr-suasive arguments than a cat?"</p>
-<p>The investigation into the Senate's <a href="2.html">political strategy</a> is ongoing, with lawmakers scrambling to determine the full extent of the cat-astrophe that has engulfed the nation's capital. Stay tuned for further updates on this developing story.</p>
-                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached 2</a> and become President of the U.S. today!</p>
-                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only for entertainment purposes.</p>
+<p>Washington D.C. - In a move that has left many in the political sphere scratching their heads, House Republicans have announced the launch of a new strategy game aimed at defending their <a href="4.html">impeached</a> leader. The game, titled "Impeachment Insurgence," promises to give players the chance to experience the thrill of defending an <a href="7.html">impeached</a> official from the grips of political adversity.</p>
+<p>According to a press release from the Republican National Committee, the game is designed to "educate and inform the public on the complexities of impeachment and the importance of standing up for the rights of the impeached."</p>
+<p>But don't just take their word for it - the game has already been praised by top Republicans for its innovative approach to crisis management. "This game is a game-changer," exclaimed Speaker of the House, Paul Ryan. "It's a fun and interactive way to show the country just how important it is to stand by our impeached leader, no matter what."</p>
+<p>The game is set in a virtual Washington D.C., where players must navigate through a series of challenges and obstacles to reach the top of the political ladder. Along the way, they will encounter a variety of "enemies" - including liberal activists, investigative journalists, and even some of their own colleagues - who are out to bring down the impeached leader.</p>
+<p>But don't worry - the game isn't all doom and gloom. Players will also have the chance to collect "power-ups" that will give them special abilities and advantages, such as the ability to ignore subpoenas, avoid questions from the media, and even change the subject when things get too hot.</p>
+<p>According to the game's creators, the goal is to show players that defending an impeached leader is not just a matter of political ideology, but a matter of personal principle. "We want to give players the chance to experience the thrill of standing up for what they believe in, even when it's not easy," said a spokesperson for the game.</p>
+<p>So if you're looking for a fun and interactive way to learn about the complexities of impeachment, look no further than "Impeachment Insurgence." But be warned - once you start playing, you may never want to stop.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
             </div>
         </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="12.html">Previous</a>
+            |
+            <a href="10.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
     </div>
 </body>
 

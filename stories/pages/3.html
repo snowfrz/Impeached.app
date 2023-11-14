@@ -3,26 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Scientific Impeachment Strategy: A New Approach to Enforce Constitutional Rights</title>
+    <title>President Proposes Bill to Legalize Mobile Games as Political Strategy</title>
     <link rel="stylesheet" href="blogstyles.css">
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
 
-    <meta property="og:title" content="Scientific Impeachment Strategy: A New Approach to Enforce Constitutional Rights" />
+    <meta property="og:title" content="President Proposes Bill to Legalize Mobile Games as Political Strategy" />
     <meta property="og:description" content="An Impeached 2 Story" />
     <meta property="og:image" content="https://www.impeached.app/Base.png" />
     <meta property="og:url" content="https://www.impeached.app/" />
 
-    <meta name="twitter:title" content="Scientific Impeachment Strategy: A New Approach to Enforce Constitutional Rights" />
+    <meta name="twitter:title" content="President Proposes Bill to Legalize Mobile Games as Political Strategy" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="An Impeached 2 Story" />
     <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
     <meta name="twitter:site" content="@JustinAlexP" />
     <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("3");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
 </head>
 
-<body>
+<body onload="addControls()">
     <div class="headerContainer">
-        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%" style="display: block;margin: 0" /></a>
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
     </div>
 
     <div class="announcementBar">
@@ -41,26 +72,36 @@
         <h1>Impeached 2</h1>
         <p>Become President of the United States in this political satire strategy game</p>
     </div>
-    
+
     <div class="features" id="feed">
-        <h1>Scientific Impeachment Strategy: A New Approach to Enforce Constitutional Rights</h1>
+        <h1>President Proposes Bill to Legalize Mobile Games as Political Strategy</h1>
         <div class="featureContainer">
             <div class="textContainer" style="width: 100%; text-align: left;">
-                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a href="../../get.html">Play today!</a></p>
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
                 <p></p>
-<p>WASHINGTON D.C. - In a groundbreaking move, a group of scientists and constitutional lawyers have come together to develop a novel approach to impeachment: the Scientific Impeachment Strategy. This unorthodox method seeks to leverage the power of science to enforce constitutional rights and hold elected officials accountable for their actions.</p>
-<p>"For too long, the impeachment process has been mired in political gamesmanship and partisan gridlock," said Dr. Jane Smith, lead researcher on the project. "By incorporating scientific principles and methods into the process, we can ensure that impeachment is carried out in a fair, transparent, and evidence-based manner."</p>
-<p>At the heart of the Scientific Impeachment Strategy is the use of rigorous data analysis and statistical modeling to evaluate the performance of elected officials. By analyzing data on everything from public opinion polls to economic indicators, scientists can identify patterns and trends that reveal whether an official is in compliance with their constitutional duties.</p>
-<p>"We're not just relying on gut feelings or political instincts," said Dr. John Doe, a statistician involved in the project. "We're using hard data to make informed decisions about whether an official is fit to serve."</p>
-<p>Once an official has been deemed out of compliance with the Constitution, the Scientific Impeachment Strategy allows for a more precise and targeted approach to removal from office. By using machine learning algorithms and other advanced computational methods, scientists can identify the specific actions or behaviors that are causing the official to violate their oath of office.</p>
-<p>"Rather than simply voting on a vague 'feeling' that an official is unfit for office, we can use data to pinpoint exactly what they're doing wrong," said Dr. Mary Johnson, a data scientist involved in the project. "This allows for a more precise and effective approach to holding officials accountable."</p>
-<p>The Scientific Impeachment Strategy has already gained attention from lawmakers and constitutional scholars across the country. While some have expressed concerns about the potential for scientific bias in the process, proponents argue that the strategy provides a much-needed injection of objectivity and fairness into the impeachment process.</p>
-<p>"It's time to take the politics out of impeachment and replace it with a fair and transparent process based on scientific evidence," said Senator Bob Smith, a co-sponsor of the strategy. "I urge my colleagues to give this approach serious consideration."</p>
-<p>As the impeachment process for President Trump continues to unfold, the Scientific Impeachment Strategy is poised to provide a new and innovative approach to holding elected officials accountable for their actions. Whether or not it will be adopted in future impeachment proceedings remains to be seen, but one thing is clear: the age of scientific impeachment has arrived.</p>
-                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached 2</a> and become President of the U.S. today!</p>
-                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only for entertainment purposes.</p>
+<p>WASHINGTON D.C. - In a shocking turn of events, President [Name] has proposed a new bill that would legalize mobile games as a political strategy. The bill, titled the "Freedom to Game Act," aims to give Americans the right to play mobile games without fear of government intervention.</p>
+<p>According to sources close to the White House, the President believes that by legalizing mobile games, he can tap into a new form of political power. "We've seen how mobile games have taken over people's lives," said a senior advisor to the President. "Why not use that to our advantage?"</p>
+<p>The bill would make it illegal for any government agency to regulate or restrict the use of mobile games. It would also provide immunity from prosecution for anyone who uses mobile games as a form of political activism.</p>
+<p><a href="1.html">Congress</a> is expected to take up the bill in the coming weeks, with many lawmakers expressing support for the measure. "This is a matter of <a href="2.html">freedom</a> of speech," said one Congressperson. "If people want to play mobile games, they should be able to do so without fear of reprisal."</p>
+<p>But not everyone is convinced. Critics argue that legalizing mobile games could lead to a rise in addiction and decreased productivity. "We can't let the government condone this kind of behavior," said a representative from the Anti-Gaming Association. "It's not good for society."</p>
+<p>Despite these concerns, the President remains resolute in his support for the bill. "This is not about political gain," he said in a statement. "It's about giving the American people the freedom to play the games they love."</p>
+<p>The bill has already gained bipartisan support, with both Democrats and Republicans expressing their approval. It is expected to pass through Congress with ease and be signed into law by the President before the end of the year.</p>
+<p>As the debate rages on, one thing is clear: the world of politics is about to get a whole lot more interesting. Will mobile games become the new battleground for political power? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
             </div>
         </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="4.html">Previous</a>
+            |
+            <a href="2.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
     </div>
 </body>
 
