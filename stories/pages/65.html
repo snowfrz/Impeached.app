@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supreme Court Rules in Favor of Mobile Game's Constitutional Challenge to Political Strategy</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Supreme Court Rules in Favor of Mobile Game's Constitutional Challenge to Political Strategy" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Supreme Court Rules in Favor of Mobile Game's Constitutional Challenge to Political Strategy" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("65");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Supreme Court Rules in Favor of Mobile Game's Constitutional Challenge to Political Strategy</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>In a landmark decision that has left political strategists and economists scratching their heads, the <a href="6.html">Supreme Court</a> has ruled in favor of a popular mobile game's challenge to the constitutionality of a new <a href="32.html">political strategy</a>. The game, "Politics Incorporated," had argued that the strategy, known as "The Great Deal," violated its right to free speech and economic freedom.</p>
+<p>In a 5-4 decision, the Court found that the strategy, which involves offering large sums of money to political opponents in exchange for their support, was indeed unconstitutional. "The Great Deal" had been implemented by a major political party in an effort to gain an advantage in upcoming elections.</p>
+<p>However, the Court ruled that the strategy violated the <a href="61.html">Constitution</a>'s guarantee of free speech and economic freedom. "By buying the support of politicians, the party was effectively silencing their voices and stifling their ability to express their own opinions," said Chief Justice John Roberts in a statement. "This is not the kind of government that our Founding Fathers intended."</p>
+<p>The ruling has significant implications for the political landscape, as many parties may now be forced to reconsider their strategies. "This decision will have a major impact on the way politics is played in this country," said political analyst Jane Smith. "It's a victory for the little guy, and a blow to the big players who try to buy their way to power."</p>
+<p>But not everyone is celebrating the decision. Some economists argue that the ruling will have a negative impact on the economy, as it will make it more difficult for businesses to influence politics. "This decision will limit the ability of businesses to participate in the political process," said economist Bob Johnson. "It's a dangerous precedent that could have far-reaching consequences."</p>
+<p>As the political and economic fallout from the decision continues to be felt, one thing is clear: the world of politics will never be the same. The "Politics Incorporated" game may have won this battle, but the war for the future of politics is far from over.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="66.html">Previous</a>
+            |
+            <a href="64.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

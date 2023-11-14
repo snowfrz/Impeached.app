@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supreme Court Rules in Favor of Democrats on Landmark Economic Legislation</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Supreme Court Rules in Favor of Democrats on Landmark Economic Legislation" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Supreme Court Rules in Favor of Democrats on Landmark Economic Legislation" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("72");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Supreme Court Rules in Favor of Democrats on Landmark Economic Legislation</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>In a shocking turn of events, the <a href="19.html">Supreme Court</a> has delivered a landmark ruling in favor of <a href="32.html">Democrats</a>, paving the way for a new era of economic <a href="47.html">legislation</a>. In a unanimous decision, the Court ruled that the government has the authority to "protect the people" from corrupt business practices, effectively green-lighting a wave of new regulations and reforms.</p>
+<p>The decision, which was reached after months of deliberation, has sparked both celebration and outrage among various interest groups. "This is a major victory for the American people," exclaimed a jubilant Speaker of the House, who praised the Court's "courageous" decision. "For too long, big corporations have held sway over our democracy, but today, we take a giant step towards a more just and equal society."</p>
+<p>Opponents of the decision, however, have decried the Court's "brazen" overreach, charging that the ruling represents a clear threat to individual liberty and the rule of law. "This is a dark day for America," declared a senior Republican Senator, his voice trembling with indignation. "The Court has abandoned its constitutional duty to uphold the law, and has instead chosen to kowtow to the whims of a radical political agenda."</p>
+<p>Despite the intense partisanship surrounding the issue, many legal experts have praised the Court's decision as a bold and necessary corrective to the current state of American politics. "The Court has shown that it will not be bullied by special interests," said one prominent constitutional scholar. "This ruling is a beacon of hope for a democracy that has grown complacent and corrupt."</p>
+<p>As the dust settles on this historic decision, one thing is clear: the political landscape of the United States will never be the same. The Court's ruling has opened the floodgates for a new wave of economic reforms, and has sent a powerful message to the nation's corporate elites: the era of unchecked power and influence is over.</p>
+<p>But what does this mean for the average American? Will this ruling lead to a more equitable distribution of wealth and opportunities? Or will it simply result in a new round of bureaucratic red tape and regulatory overreach? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="73.html">Previous</a>
+            |
+            <a href="71.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
