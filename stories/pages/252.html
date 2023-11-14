@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>House of Horrors: Democrats Unveil Dystopian Economic Plan for America</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="House of Horrors: Democrats Unveil Dystopian Economic Plan for America" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="House of Horrors: Democrats Unveil Dystopian Economic Plan for America" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("252");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>House of Horrors: Democrats Unveil Dystopian Economic Plan for America</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Washington D.C. - In a shocking turn of events, the Democratic party has unveiled a <a href="190.html">dystopian</a> economic plan for America, which has left many in shock and awe. The plan, dubbed the "House of Horrors," promises to turn the nation into a post-apocalyptic wasteland, where the only currency is fear and the only industries are survival and despair.</p>
+<p>According to sources within the party, the plan is designed to create a "utopia" where the government controls every aspect of citizens' lives, including their food, shelter, and clothing. In a bold move, the <a href="135.html">Democrats</a> have proposed a new tax system, where every American will be taxed based on their perceived "privilege."</p>
+<p>"We understand that some Americans have been fortunate enough to be born into wealth and privilege," said Speaker of the House, Representative Maxine Waters (D-CA). "And as such, they must be held accountable for their good fortune. With our new tax system, we will ensure that everyone contributes their fair share to the greater good."</p>
+<p>But the plan doesn't stop there. The <a href="207.html">Democrats</a> have also proposed a new national service program, where all able-bodied citizens will be required to work in menial jobs, such as cleaning up the streets or serving in "reeducation" camps.</p>
+<p>"We understand that some Americans have been misled by the propaganda of the past," said Representative Waters. "And as such, we must provide them with the opportunity to relearn the correct ideology. Our national service program will provide a chance for all citizens to contribute to the betterment of society, while also learning the value of hard work and dedication."</p>
+<p>But critics of the plan have already begun to speak out, calling it a "declaration of war on the American people."</p>
+<p>"This plan is a clear example of the <a href="32.html">Democrats</a>' intent to control every aspect of our lives," said Republican leader, Senator John McCain (R-AZ). "It's a <a href="115.html">dystopian</a> nightmare, and I will not stand idly by while they dismantle the greatest country on earth."</p>
+<p>As the debate rages on, one thing is clear: the House of Horrors is no laughing matter. And for those who live in America, the future is looking more and more bleak.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="253.html">Previous</a>
+            |
+            <a href="251.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
