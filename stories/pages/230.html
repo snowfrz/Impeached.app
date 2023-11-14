@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached President Launches New Taxation Strategy Game, Gamers Flock to Support 'Tax 'n' Play'!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached President Launches New Taxation Strategy Game, Gamers Flock to Support 'Tax 'n' Play'!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached President Launches New Taxation Strategy Game, Gamers Flock to Support 'Tax 'n' Play'!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("230");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached President Launches New Taxation Strategy Game, Gamers Flock to Support 'Tax 'n' Play'!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a bold move to distract from his ongoing impeachment trial, former President John Smith has announced the launch of a new <a href="69.html">taxation</a> strategy game, "Tax 'n' Play." The game, which has already gained a cult following among politically-minded gamers, allows players to navigate a virtual world filled with tax brackets, deductions, and lobbyists.</p>
+<p>"We're thrilled to bring this innovative game to the <a href="20.html">gaming</a> community," said President Smith in a statement. "Tax 'n' Play is more than just a game – it's a way for Americans to engage with the complex issue of <a href="59.html">taxation</a> in a fun and interactive way."</p>
+<p>But not everyone is convinced. Critics have slammed the game for promoting a simplistic view of <a href="60.html">taxation</a> and for glorifying the influence of special interest groups.</p>
+<p>"This game is a recipe for disaster," warned Senator Jane Doe, a vocal critic of the game. "It's a thinly-veiled attempt to distract from the real issues facing our country, and it's going to lead to all sorts of problems in the long run."</p>
+<p>Despite the criticism, "Tax 'n' Play" has been a huge hit among gamers, who see it as a unique opportunity to engage with the political process in a new and exciting way.</p>
+<p>"I'm loving this game," gushed gamer Tom Johnson. "It's so much fun to navigate the different tax brackets and try to stay on top of all the loopholes and deductions. And the best part is, it's actually teaching me something about the real-world tax system!"</p>
+<p>As "Tax 'n' Play" continues to gain popularity, it's clear that the game has struck a chord with Americans who are eager for a new and innovative way to engage with <a href="125.html">politics</a>. Whether or not the game is a success in the long term remains to be seen, but for now, it's clear that it's a hit with gamers and politicos alike.</p>
+<p>The game is available now on PC, Mac, and Xbox, with a mobile version coming soon.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="231.html">Previous</a>
+            |
+            <a href="229.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
