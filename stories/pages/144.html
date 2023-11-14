@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Government Cracks Down on Strategy Games as War Fears Grow</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Government Cracks Down on Strategy Games as War Fears Grow" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Government Cracks Down on Strategy Games as War Fears Grow" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("144");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Government Cracks Down on Strategy Games as War Fears Grow</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the government has announced a new initiative to crack down on <a href="12.html">strategy games</a> in an effort to prevent the escalation of <a href="97.html">war</a> fears. The move comes amid growing concerns about the impact of these games on the nation's youth and the potential for them to be used as a tool for foreign powers to manipulate public opinion.</p>
+<p>According to sources within the government, the new initiative will involve a comprehensive ban on all <a href="21.html">strategy games</a>, including popular titles like "Warcraft," "Command and Conquer," and "Rise of Nations." The ban will be enforced through a combination of legislation, regulation, and public education campaigns.</p>
+<p>"We take the threat of <a href="137.html">war</a> very seriously, and we cannot afford to take any chances when it comes to the security of our nation," said a government spokesperson. "The use of <a href="130.html">strategy games</a> to foment unrest and promote militaristic ideologies is a real and present danger, and we must take decisive action to protect the American people."</p>
+<p>The move has been met with widespread criticism from gaming enthusiasts and civil liberties groups, who argue that the ban is a violation of free speech and creativity. However, supporters of the ban point to the growing trend of futuristic <a href="27.html">war</a> games and the potential for them to distract from the real issues facing the nation.</p>
+<p>"The games are a form of propaganda, designed to desensitize our children to the horrors of <a href="56.html">war</a> and to promote a culture of aggression and hostility," said a government official. "We must take a stand against this insidious form of manipulation and protect our nation from the corrupting influence of these games."</p>
+<p>As the debate rages on, many are left wondering what the future holds for strategy game enthusiasts and the gaming industry as a whole. One thing is certain, however: the government's crackdown on <a href="74.html">strategy games</a> is a clear sign that the <a href="95.html">war</a> on fear and manipulation is far from over.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="145.html">Previous</a>
+            |
+            <a href="143.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
