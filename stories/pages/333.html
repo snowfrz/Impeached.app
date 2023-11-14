@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>President Proposes Controversial Gaming Disaster Relief Bill, Sparking Taxation Debate!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="President Proposes Controversial Gaming Disaster Relief Bill, Sparking Taxation Debate!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="President Proposes Controversial Gaming Disaster Relief Bill, Sparking Taxation Debate!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("333");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>President Proposes Controversial Gaming Disaster Relief Bill, Sparking Taxation Debate!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a surprising move, <a href="181.html">President</a> Sarah Johnson has proposed a controversial bill aimed at providing <a href="311.html">disaster</a> relief to the <a href="269.html">gaming</a> industry, which has been devastated by the recent surge in popularity of virtual reality and streaming services. The "Gaming Disaster Relief Act" has sparked heated debate among lawmakers, with some hailing it as a necessary measure to support the affected industry, while others have raised concerns about the potential tax implications.</p>
+<p>"The <a href="90.html">gaming</a> industry has been hit hard by the changing tides of technology, and it's our duty to provide support to those who have been affected," <a href="37.html">President</a> Johnson said in a statement. "This bill will not only help the <a href="175.html">gaming</a> industry recover from these <a href="252.html">disaster</a>s, but also ensure that they are able to continue providing entertainment and enjoyment to the American people."</p>
+<p>However, not everyone is convinced. Critics have pointed out that the bill could lead to increased <a href="95.html">taxation</a> on <a href="4.html">gaming</a> companies, which could in turn drive up the cost of games for consumers.</p>
+<p>"While we understand the need to support the <a href="147.html">gaming</a> industry, we cannot support a bill that would burden consumers with higher taxes," said Senator John Smith. "We must find a balance between providing support and protecting the interests of hardworking Americans."</p>
+<p>The proposed bill would provide funding for <a href="201.html">disaster</a> relief efforts, including the rebuilding of <a href="112.html">gaming</a> studios and the development of new games. It would also establish a grant program to help <a href="128.html">gaming</a> companies transition to virtual reality and streaming platforms.</p>
+<p>"The <a href="239.html">gaming</a> industry is not just a source of entertainment, but also a major driver of our economy," <a href="195.html">President</a> Johnson added. "We must do everything in our power to support it, even if it means making some tough decisions."</p>
+<p>The bill has yet to be passed by Congress, and its fate remains uncertain. However, one thing is clear: the debate over the "Gaming Disaster Relief Act" is far from over.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="334.html">Previous</a>
+            |
+            <a href="332.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
