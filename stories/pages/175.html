@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supreme Court Rules: Video Games Now Legal Political Speech!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Supreme Court Rules: Video Games Now Legal Political Speech!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Supreme Court Rules: Video Games Now Legal Political Speech!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("175");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Supreme Court Rules: Video Games Now Legal Political Speech!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p><a href="107.html">Supreme Court</a> Shocker: Video Games Declared Legal Form of Political Speech!</p>
+<p>In a stunning turn of events, the <a href="165.html">Supreme Court</a> has ruled that video games are now a legally recognized form of political speech. The landmark decision, which was met with both excitement and disbelief from the <a href="117.html">gaming</a> community, has opened up new avenues for politicians to reach their constituents and express their views.</p>
+<p>"This is a major victory for freedom of speech," said Justice Ruth Bader Ginsburg, reading from the bench. "The ability to express oneself through video games is an essential component of a healthy democracy."</p>
+<p>The decision was reached after a heated debate between the Justices, with Chief Justice John Roberts delivering the swing vote. "The First Amendment is not a Swiss Army knife," he argued. "It's a tool that must be used wisely and with caution. Video games are a legitimate form of political expression, and we must recognize their value."</p>
+<p>The ruling has sparked outrage from some quarters, with detractors claiming that video games are a frivolous form of entertainment and have no place in the political discourse. But proponents argue that video games offer a unique platform for <a href="147.html">political satire</a> and critique, and can be a powerful tool for mobilizing public opinion.</p>
+<p>"Think about it," said Political Science Professor Sarah Jones. "With video games, politicians can make their arguments more engaging and memorable. They can use gameplay mechanics to illustrate their policies and connect with voters on a deeper level."</p>
+<p>The ruling has already had far-reaching consequences. Several politicians have launched their own video games, using them to promote their platforms and attack their opponents. In one particularly controversial game, President Joe Biden is depicted as a crypto-commie who wants to take away your right to play Fortnite.</p>
+<p>But not everyone is celebrating the ruling. Critics warn that video games could become a haven for political propaganda, with gamers unwittingly absorbing biased information and propaganda.</p>
+<p>"It's a slippery slope," said media critic Tom Arnold. "Once politicians start using video games as a platform for their message, it will be hard to control the flow of information. We could see a proliferation of propaganda games that are designed to manipulate public opinion."</p>
+<p>For now, however, the ruling stands. And as video games continue to evolve into a major political force, one thing is clear: the world of politics will never be the same again.</p>
+<p>So the next time you boot up your Xbox or PlayStation, remember: you may be engaging in more than just a harmless game of Call of Duty. You may be exercising your right to free speech.</p>
+<p>But don't take our word for it. Just ask President Biden: he's already launched his own game, Joe's Political Puzzle. Can you solve it? </p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="176.html">Previous</a>
+            |
+            <a href="174.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

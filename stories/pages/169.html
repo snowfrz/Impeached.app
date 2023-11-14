@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HISTORY REPEATS ITSELF: NEW MOBILE GAME ALLOWS PLAYERS TO TAKE ON</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="HISTORY REPEATS ITSELF: NEW MOBILE GAME ALLOWS PLAYERS TO TAKE ON" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="HISTORY REPEATS ITSELF: NEW MOBILE GAME ALLOWS PLAYERS TO TAKE ON" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("169");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>HISTORY REPEATS ITSELF: NEW MOBILE GAME ALLOWS PLAYERS TO TAKE ON</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, a new mobile game has taken the world by storm, allowing players to take on the roles of historical figures from the <a href="12.html">House of Representatives</a>. "Historical Replay" has become an instant hit among gamers and politicos alike, with its unique blend of <a href="6.html">political satire</a> and strategic gameplay.</p>
+<p>In the game, players are tasked with navigating the complex world of Congress, as they take on the roles of famous lawmakers from the past. From the fiery oratory of Frederick Douglass to the cunning diplomacy of Daniel Webster, players must use their wits and political savvy to pass bills, negotiate with colleagues, and avoid the constant threat of impeachment.</p>
+<p>But as players progress through the game, they begin to realize that not everything is as it seems. Strange coincidences and eerie parallels start to appear, as if <a href="21.html">history</a> itself is repeating itself.</p>
+<p>"It's like the game is trying to tell us something," said one player, "but I'm not sure what it is."</p>
+<p>As players delve deeper into the game, they uncover a sinister plot to manipulate the course of <a href="166.html">history</a>. It seems that the game's creators have programmed in a series of events that will play out in exactly the same way as they did in real life.</p>
+<p>"It's like they're trying to predict the future," said another player, "but with a satirical twist."</p>
+<p>As the game reaches its climax, players must make a choice: do they follow the path of <a href="4.html">history</a>, or do they take a bold new direction? The fate of the nation hangs in the balance, as players navigate the treacherous waters of <a href="87.html">political satire</a> and game design.</p>
+<p>Will they succeed in changing the course of <a href="99.html">history</a>, or will they fall victim to the same old political machinations? The world will be watching as players take on the roles of the most powerful lawmakers in the land, in this satirical and outrageous mobile game.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="170.html">Previous</a>
+            |
+            <a href="168.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

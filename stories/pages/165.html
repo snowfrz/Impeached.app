@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supreme Court Rules: Gamers Can Vote in Elections! Historic Win for Gaming Community!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Supreme Court Rules: Gamers Can Vote in Elections! Historic Win for Gaming Community!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Supreme Court Rules: Gamers Can Vote in Elections! Historic Win for Gaming Community!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("165");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Supreme Court Rules: Gamers Can Vote in Elections! Historic Win for Gaming Community!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Washington D.C. - In a landmark decision that has left political pundits and gamers alike scratching their heads, the <a href="161.html">Supreme Court</a> has ruled that video gamers are eligible to vote in <a href="151.html">election</a>s. The historic ruling has been hailed as a major victory for the <a href="52.html">gaming</a> community, who have long been marginalized in the political process.</p>
+<p>"This is a game-changer," exclaimed Chad "The Gaming Guru" Johnson, a prominent gamer and political activist. "For too long, the <a href="9.html">gaming</a> community has been left out of the political process. But now, we finally have a voice. And let me tell you, we're going to make some noise."</p>
+<p>The ruling comes after a lengthy legal battle, with the <a href="147.html">gaming</a> community arguing that their dedication and skill in navigating virtual worlds makes them perfectly suited to the demands of political office.</p>
+<p>"Gamers have spent countless hours mastering complex strategies, solving puzzles, and navigating treacherous terrain," said Chief Justice Ruth Bader Ginsburg. "These skills are directly transferable to the political arena. In fact, we have seen some of our most successful politicians exhibit these very same qualities."</p>
+<p>The decision has been met with both excitement and skepticism, with some arguing that the ruling could lead to a flood of "pro-gamer" politicians who prioritize virtual victories over real-world ones.</p>
+<p>"I'm not sure this is a good idea," said Sen. Ted Cruz (R-Texas). "We don't want a situation where virtual wins are more important than real-world ones. That would be a disaster."</p>
+<p>But for now, the <a href="16.html">gaming</a> community is celebrating their historic victory. And who knows? Maybe someday soon, we'll see a gamer-led political party, dedicated to solving the world's problems through endless grinding and leveling up.</p>
+<p>Until then, gamers can mark their calendars for the next <a href="149.html">election</a>, and get ready to make their voices heard. Because in the world of politics, it's all about the next big win.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="166.html">Previous</a>
+            |
+            <a href="164.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
