@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BREAKING: Shocking Impeachment Twist Threatens to Upend Entire Political Landscape!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="BREAKING: Shocking Impeachment Twist Threatens to Upend Entire Political Landscape!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="BREAKING: Shocking Impeachment Twist Threatens to Upend Entire Political Landscape!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("216");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>BREAKING: Shocking Impeachment Twist Threatens to Upend Entire Political Landscape!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Washington D.C. - In a shocking turn of events, it was revealed today that the ongoing <a href="148.html">impeachment</a> proceedings against President P. F. Trump may have unintended consequences that threaten to upend the entire political landscape.</p>
+<p>According to sources close to the investigation, a previously unknown clause in the Constitution has been discovered, which states that if the President is impeached, all of his pet rocks will be confiscated and sold on eBay.</p>
+<p>"This is a bombshell," said Senate Majority Leader, Senator J. Q. Public. "We had no idea this clause existed. It's going to have a huge impact on the President's ability to play <a href="30.html">political games</a>."</p>
+<p>The discovery has sent shockwaves through the political world, with many politicians scrambling to figure out how to avoid the impending rock crisis.</p>
+<p>"It's a disaster," said former President B. B. Clinton. "I had no idea I had so many rocks. I thought they were just collecting dust in my basement."</p>
+<p>Meanwhile, President Trump's legal team is fighting to keep the rocks out of the hands of the government.</p>
+<p>"These rocks are not just any rocks," said Trump's lawyer, Rudy Giuliani. "They are the President's most trusted advisors. He relies on them for counsel and guidance. Without them, he'll be lost."</p>
+<p>As the crisis deepens, economists are warning of a potential rock shortage, should the President's rocks be sold on eBay.</p>
+<p>"It could have a catastrophic impact on the economy," said Economist Dr. J. M. Smith. "Rocks are a vital component of many industries. Without them, we could see a complete collapse of the supply chain."</p>
+<p>In related news, the President's opponents are calling for his <a href="176.html">impeachment</a> to be expedited, in order to avoid the potential rock crisis.</p>
+<p>"We cannot let the President's rocks fall into the wrong hands," said Speaker of the House, Nancy Pelosi. "We must act quickly to protect the American people."</p>
+<p>But not everyone is convinced that the President's rocks are a serious threat.</p>
+<p>"I think it's all just a lot of hype," said political analyst, James Carville. "The President's rocks are not going to make or break his presidency. He's got bigger problems to worry about."</p>
+<p>Only time will tell how this rock crisis will play out, but one thing is certain - the political landscape will never be the same.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="217.html">Previous</a>
+            |
+            <a href="215.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SENATE SCANDAL ROCKS WASHINGTON: CORRUPTION CRISIS THREATENS CON</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="SENATE SCANDAL ROCKS WASHINGTON: CORRUPTION CRISIS THREATENS CON" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="SENATE SCANDAL ROCKS WASHINGTON: CORRUPTION CRISIS THREATENS CON" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("215");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>SENATE SCANDAL ROCKS WASHINGTON: CORRUPTION CRISIS THREATENS CON</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, a <a href="172.html">Senate</a> <a href="116.html">corruption</a> scandal has erupted in the nation's capital, threatening to upend the very fabric of American democracy. Sources close to the investigation have revealed that several high-ranking officials have been embroiled in a complex web of <a href="195.html">corruption</a>, manipulating the political system for personal gain.</p>
+<p>At the center of the probe is Senator Marcus Johnson, a prominent figure in both political parties and a self-proclaimed "master of <a href="30.html">political games</a>." According to insiders, Johnson has been using his position to enrich himself and his allies, using a combination of backroom deals, campaign contributions, and outright bribery to secure lucrative government contracts and regulatory favoritism.</p>
+<p>"It's like a bad game of political chess," said one anonymous source, "Senator Johnson has been playing both sides against the middle, making deals that benefit him and his friends, while sacrificing the greater good."</p>
+<p>The scandal has already claimed several high-profile casualties, including the resignation of influential Senator Rachel Lee, who was forced to step down after it was discovered she had accepted millions of dollars in illegal campaign donations from Johnson.</p>
+<p>As the investigation widens, lawmakers are scrambling to distance themselves from the tainted politicians, with some even calling for a complete overhaul of the <a href="28.html">Senate</a>'s internal operations.</p>
+<p>"This is a constitutional crisis," said Senator James Smith, a vocal critic of Johnson's tactics. "We cannot continue to allow a small group of corrupt officials to undermine the very foundation of our democracy."</p>
+<p>Meanwhile, Johnson has remained tight-lipped, insisting he is innocent of any wrongdoing. But with the evidence mounting against him, it seems unlikely he will be able to weather the storm.</p>
+<p>As the nation watches in disbelief, the political landscape is shifting rapidly, with many calling for a new era of transparency and accountability in government. Whether this scandal will lead to real change remains to be seen, but one thing is clear: the people of America are demanding a <a href="84.html">Senate</a> that serves their interests, not just the interests of a privileged few.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="216.html">Previous</a>
+            |
+            <a href="214.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
