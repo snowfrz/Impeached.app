@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Election Shocker: Strategy Games Reveal Secret Plan to Control US Politics!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Election Shocker: Strategy Games Reveal Secret Plan to Control US Politics!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Election Shocker: Strategy Games Reveal Secret Plan to Control US Politics!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("350");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Election Shocker: Strategy Games Reveal Secret Plan to Control US Politics!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Washington D.C. - In a shocking turn of events, a group of strategy game enthusiasts have been revealed to have a secret plan to control the US political landscape. According to sources, the group, known as "The Strategists," have been secretly manipulating political outcomes through their expertise in game theory and political maneuvering.</p>
+<p>The group, made up of influential game designers and political strategists, have been meeting in secret for years, crafting a complex web of alliances and betrayals that have been unfolding in real-time.</p>
+<p>"It's not just about winning <a href="221.html">election</a>s," said group leader and game designer, Alex "The Ace" Anderson. "It's about creating a new political landscape that favors the strategic thinker. We've been playing the game of politics for years, and now it's time to take control."</p>
+<p>The group's plan involves infiltrating both major political parties and manipulating their policies and candidates to suit their own agenda. They have been using their knowledge of game theory to create complex strategies that maximize their chances of success, often by exploiting the weaknesses of their opponents.</p>
+<p>"We've been using game mechanics to create a new political reality," said Anderson. "It's not about left or right, it's about who can outmaneuver their opponents. And we've been doing it with style and grace."</p>
+<p>The group's plan has been met with both excitement and outrage from political insiders. Some see it as a bold new approach to politics, while others view it as a dangerous manipulation of the political process.</p>
+<p>"It's a risky move, but it could pay off in the long run," said political analyst, Sarah "The Sage" Smith. "The Strategists are taking a page out of the game design playbook and applying it to politics. It's a bold move, but it could be a game-changer."</p>
+<p>However, not everyone is convinced. Many are concerned about the group's lack of transparency and their potential to undermine the democratic process.</p>
+<p>"This is a dangerous trend," said political opponent, John "The Jester" Johnson. "The Strategists are playing a game of political chess, but they're not playing by the rules. We need to be vigilant and make sure they don't manipulate the political landscape for their own gain."</p>
+<p>As the <a href="301.html">election</a> season heats up, the group's plan is expected to come to a head. Will they succeed in their bid to control the political landscape, or will their opponents outmaneuver them at the polls? Only time will tell.</p>
+<p>In the meantime, political strategists and game designers alike are eagerly awaiting the outcome of this unprecedented political experiment. Will it be a game-changer, or a game-ender? Only the future will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="351.html">Previous</a>
+            |
+            <a href="349.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
