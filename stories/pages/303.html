@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BREAKING: President Faces Impeachment After New Legislation Threatens Executive Power</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="BREAKING: President Faces Impeachment After New Legislation Threatens Executive Power" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="BREAKING: President Faces Impeachment After New Legislation Threatens Executive Power" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("303");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>BREAKING: President Faces Impeachment After New Legislation Threatens Executive Power</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, <a href="110.html">President</a> Thomas Jefferson "T.J." Johnson has found himself at the center of a heated <a href="223.html">impeachment</a> debate, as a new piece of <a href="177.html">legislation</a> threatens to strip him of his executive powers.</p>
+<p>According to sources close to the White House, the bill, titled the "Executive Power Limitation Act," aims to restrict the <a href="181.html">President</a>'s ability to make unilateral decisions and require Congressional approval for any major policy changes.</p>
+<p>"This is a direct attack on the <a href="47.html">President</a>'s authority," said White House Press Secretary, Sarah "Sassy" Sanders. "T.J. has been a beacon of stability and leadership for this country, and we won't stand idly by while some in Congress try to undermine his powers."</p>
+<p>But not everyone is convinced. Critics of the bill argue that it's long overdue, and that the <a href="135.html">President</a>'s unchecked power has led to a culture of corruption and abuse of authority.</p>
+<p>"We can't keep letting the <a href="284.html">President</a> make decisions without any oversight," said Rep. Alexandra "Alex" Rodriguez (D-NY). "This bill is a necessary step to ensure that the <a href="280.html">President</a> is held accountable and that the voice of the people is heard."</p>
+<p>As the debate rages on, <a href="256.html">President</a> Johnson remains defiant, insisting that he will not be intimidated by the <a href="59.html">legislation</a>.</p>
+<p>"I will not be bullied by these politicians," he said in a statement. "I will continue to lead this country with the strength and vision that the American people have entrusted me with."</p>
+<p>But with the bill gaining momentum in Congress, it seems that the <a href="39.html">President</a>'s days in office may be numbered. Stay tuned for further updates as this story develops.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="304.html">Previous</a>
+            |
+            <a href="302.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

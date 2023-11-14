@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached Historian Unveils Groundbreaking Mobile Game: 'Revolutionary Science' Changes the Game!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached Historian Unveils Groundbreaking Mobile Game: 'Revolutionary Science' Changes the Game!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached Historian Unveils Groundbreaking Mobile Game: 'Revolutionary Science' Changes the Game!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("304");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached Historian Unveils Groundbreaking Mobile Game: 'Revolutionary Science' Changes the Game!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Shocking new details have emerged regarding the impeachment trial of esteemed historian, Professor James Smith. While the nation was fixated on the historic proceedings, Smith secretly worked on a revolutionary new mobile game that is set to change the gaming industry forever.</p>
+<p>Called "Revolutionary Science," the game has been hailed as a masterpiece by gaming critics and historians alike. Players take on the role of a time-traveling scientist, navigating through key moments in <a href="94.html">history</a> and conducting experiments to change the course of events.</p>
+<p>But here's the twist: the game's true purpose goes far beyond mere entertainment. According to Smith, "Revolutionary Science" was designed to educate players on the importance of critical thinking and scientific literacy in shaping our understanding of <a href="2.html">history</a>.</p>
+<p>"We've found that many people struggle to distinguish between fact and fiction when it comes to historical events," Smith explained in a recent interview. "Our game aims to teach players how to analyze data, evaluate sources, and draw conclusions based on empirical evidence."</p>
+<p>Smith, who was <a href="267.html">impeached</a> last year for misusing government funds, has been working on "Revolutionary Science" in secret for over a year. The game is set to be released later this month and is already generating buzz in the gaming community.</p>
+<p>But not everyone is convinced of the game's educational merits. Critics argue that the game's focus on time-travel and <a href="285.html">science</a> fiction elements dilutes its potential impact.</p>
+<p>"History is complex and multifaceted," argued historian Dr. Jane Doe. "Trying to boil it down into a mobile game is a disservice to the subject matter."</p>
+<p>Despite these criticisms, Smith remains steadfast in his belief in the game's potential.</p>
+<p>"We're not trying to replace traditional <a href="130.html">history</a> education," he said. "We're simply offering a new way to engage with the subject. Who knows? Maybe the next generation of historians will be inspired by our game to pursue a career in the field."</p>
+<p>As the release of "Revolutionary Science" approaches, one thing is clear: this game is set to shake up the gaming industry in a big way. But will it also change the way we think about <a href="301.html">history</a>? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="305.html">Previous</a>
+            |
+            <a href="303.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
