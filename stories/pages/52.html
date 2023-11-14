@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Government Announces Plan to Use Video Games to Predict Political Outcomes</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Government Announces Plan to Use Video Games to Predict Political Outcomes" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Government Announces Plan to Use Video Games to Predict Political Outcomes" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("52");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Government Announces Plan to Use Video Games to Predict Political Outcomes</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the government has announced a groundbreaking new plan to use video games to predict political outcomes. The ambitious initiative, dubbed "Game of Politics," aims to harness the power of <a href="20.html">gaming</a> to predict election results with unprecedented accuracy.</p>
+<p>"We are living in a time where the political landscape is more unpredictable than ever," said the Acting Secretary of State, a tall, imposing figure with a stern expression. "We need to be proactive in our approach, and what better way to do that than by tapping into the collective unconscious of the American people?"</p>
+<p>The program will involve the development of a custom-built video game, designed to simulate the complexities of modern politics. Players will take on the roles of political candidates, navigating a virtual world filled with challenges and obstacles that reflect the real-life issues facing the country.</p>
+<p>But here's the kicker: the game will not be limited to one political party. In a bold move, the government has decided to include both <a href="11.html">Republicans</a> and Democrats in the simulation.</p>
+<p>"We want to ensure that the game is as realistic as possible," explained the Acting Secretary. "By including both sides, we can create a truly impartial predictor of political outcomes."</p>
+<p>Critics have already begun to question the validity of the plan, with some arguing that it constitutes a form of "profiling" against certain political groups. However, proponents of the program argue that it is a necessary measure in order to gain a deeper understanding of the American electorate.</p>
+<p>"Think of it this way," said one government official, "by simulating the experiences of both parties, we can gain a more nuanced understanding of what drives political behavior. It's like a political MRI, if you will."</p>
+<p>The plan has received widespread attention, with many observers speculating about the potential implications of such a program. Some have even gone so far as to suggest that the government may be using the game as a way to manipulate public opinion.</p>
+<p>But the government remains steadfast in its commitment to the program, insisting that it is purely a tool for predicting political outcomes and not a means of exerting control over the political process.</p>
+<p>"This is not a game of propaganda," said the Acting Secretary. "It is a serious effort to understand the will of the American people. And we are confident that the results will speak for themselves."</p>
+<p>As the game nears completion, political insiders are abuzz with excitement. Will it be able to accurately predict the outcome of the next election? Only time will tell. But one thing is certain: the future of politics has never been more uncertain.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="53.html">Previous</a>
+            |
+            <a href="51.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

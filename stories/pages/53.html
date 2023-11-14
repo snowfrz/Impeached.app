@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached Leader's Dystopian Sci-Fi Plan Raises Concerns Over Freedom</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached Leader's Dystopian Sci-Fi Plan Raises Concerns Over Freedom" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached Leader's Dystopian Sci-Fi Plan Raises Concerns Over Freedom" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("53");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached Leader's Dystopian Sci-Fi Plan Raises Concerns Over Freedom</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the recently <a href="4.html">impeached</a> leader has unveiled a <a href="9.html">dystopian</a> sci-fi plan that has left many in the nation questioning the future of <a href="23.html">freedom</a>.</p>
+<p>According to sources close to the administration, the leader has been secretly working on a top-secret project codenamed "Project Freedom's End." The aim of the project is to create a fully functional <a href="17.html">dystopian</a> society, complete with a totalitarian government, oppressive surveillance state, and a complete disregard for individual rights and autonomy.</p>
+<p>"It's like something straight out of a Black Mirror episode," said one source, who wished to remain anonymous. "The leader is convinced that this is the only way to ensure national security and stability in the face of an increasingly complex and uncertain world."</p>
+<p>But critics of the plan argue that it is a clear violation of the Constitution and the principles of democracy that have long held American society together.</p>
+<p>"This is not only a danger to individual liberty, but also a threat to the very fabric of our society," said Senator Sarah Johnson, a vocal critic of the plan. "We cannot allow the leader to turn America into a <a href="37.html">dystopian</a> nightmare."</p>
+<p>Despite the backlash, the leader remains steadfast in their commitment to Project Freedom's End. In a recent statement, they asserted that "the ends justify the means," and that "the security of the nation must always come first."</p>
+<p>As the debate rages on, one thing is clear: the future of <a href="48.html">freedom</a> in America hangs in the balance. Will the leader's <a href="33.html">dystopian</a> sci-fi plan come to fruition, or will the nation rise up against it? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="54.html">Previous</a>
+            |
+            <a href="52.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
