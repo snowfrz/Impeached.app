@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Games Industry Under Fire Over Alleged Tax Evasion During Time of War</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Mobile Games Industry Under Fire Over Alleged Tax Evasion During Time of War" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Mobile Games Industry Under Fire Over Alleged Tax Evasion During Time of War" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("95");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Mobile Games Industry Under Fire Over Alleged Tax Evasion During Time of War</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the <a href="3.html">mobile games</a> industry has found itself at the center of a political storm, with lawmakers accusing top executives of tax evasion during a time of <a href="64.html">war</a>. The allegations have sparked a heated debate in Congress, with some calling for <a href="41.html">impeachment</a> proceedings to be launched against the industry's leaders.</p>
+<p>According to sources close to the investigation, the <a href="65.html">mobile games</a> giants have been accused of using complex offshore tax structures to avoid paying their fair share of taxes, while raking in billions of dollars in profits from players. The alleged scheme is said to have been in place for several years, with the companies using shell companies and secret bank accounts to evade tax authorities.</p>
+<p>"This is a clear case of corporate greed and hypocrisy," said Representative Jane Smith, a leading critic of the industry. "While innocent lives are being lost in the <a href="56.html">war</a>, these companies are exploiting loopholes to line their own pockets. It's a disgrace."</p>
+<p>The investigation is believed to have been triggered by a whistleblower who came for<a href="24.html">war</a>d with evidence of the tax evasion scheme. The whistleblower, who wishes to remain anonymous, claims to have worked closely with the companies' executives to set up the offshore structures.</p>
+<p>"I couldn't sleep at night knowing what we were doing," the whistleblower said in a statement. "I'm glad I finally found the courage to come for<a href="20.html">war</a>d and expose the truth."</p>
+<p>The allegations have sparked outrage across the political spectrum, with even some of the industry's biggest supporters calling for action.</p>
+<p>"This is a serious issue that needs to be taken seriously," said Senator John Doe. "We cannot allow these companies to get away with this kind of behavior. It's not just a matter of taxes, it's a matter of integrity and accountability."</p>
+<p>The companies at the center of the investigation have yet to comment on the allegations, but sources close to the matter say they are preparing to issue a statement denying any wrongdoing.</p>
+<p>As the scandal continues to unfold, one thing is clear: the <a href="59.html">mobile games</a> industry will never be the same again. The public's trust has been shattered, and the industry's reputation has been tarnished forever.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="96.html">Previous</a>
+            |
+            <a href="94.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Senate Set to Vote on Bill Aimed at Regulating Mobile Game Industry Following Impeachment of President</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Senate Set to Vote on Bill Aimed at Regulating Mobile Game Industry Following Impeachment of President" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Senate Set to Vote on Bill Aimed at Regulating Mobile Game Industry Following Impeachment of President" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("92");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Senate Set to Vote on Bill Aimed at Regulating Mobile Game Industry Following Impeachment of President</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the <a href="31.html">Senate</a> is set to vote on a bill aimed at regulating the mobile game industry following the impeachment of President [Blank]. The bill, which has been gaining momentum in the <a href="17.html">House of Representatives</a>, seeks to address concerns over the growing influence of <a href="77.html">mobile games</a> on American society.</p>
+<p>According to sources close to the matter, the bill aims to regulate the mobile game industry in the same way as the film and music industries. "We cannot allow the proliferation of addictive and potentially harmful <a href="59.html">mobile games</a> to continue unchecked," said [Senator Johnson], a leading proponent of the bill. "It is our duty to protect the American people from the negative effects of these games."</p>
+<p>The bill has gained bipartisan support, with several <a href="42.html">Democrats</a> expressing their enthusiasm for the proposal. "As a parent, I know how important it is to protect our children from the potential harm of <a href="19.html">mobile games</a>," said [Senator Smith]. "We must take action to ensure that these games are safe and do not have a negative impact on our youth."</p>
+<p>However, not everyone is convinced of the need for regulation. "This is a clear overreach of government power," said [Senator [Blank]). "The mobile game industry is a free market, and the government has no place in regulating it."</p>
+<p>Despite the opposition, the bill is expected to pass in the <a href="41.html">Senate</a>, with a vote expected within the next week. If passed, it will be sent to the President for signing into law.</p>
+<p>As the debate rages on, one thing is clear: the mobile game industry will never be the same. Stay tuned for further updates on this developing story.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="93.html">Previous</a>
+            |
+            <a href="91.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
