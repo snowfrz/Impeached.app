@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached President Secretly Runs Shadow Government from Gaming Lair</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached President Secretly Runs Shadow Government from Gaming Lair" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached President Secretly Runs Shadow Government from Gaming Lair" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("248");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached President Secretly Runs Shadow Government from Gaming Lair</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking revelation, it has been discovered that the recently <a href="202.html">impeached</a> <a href="174.html">President</a>, known only as "The Gaming King," has been secretly running a shadow government from the basement of a lavish <a href="20.html">gaming</a> lair located beneath the White House.</p>
+<p>According to sources close to the former <a href="135.html">President</a>, The Gaming King has been using the lair as a hub to manipulate <a href="175.html">political games</a> and <a href="55.html">taxation</a> policies from behind the scenes. The lair, equipped with state-of-the-art <a href="242.html">gaming</a> consoles and virtual reality technology, has been the <a href="39.html">President</a>'s primary location for conducting "executive business" since his impeachment.</p>
+<p>"It's like a game to him," said one former aide. "He's always been a bit of a gamer, but now he's taken it to a whole new level. He's got the whole thing rigged in his favor."</p>
+<p>Despite his absence from the public eye, The Gaming King has remained a powerful force in Washington politics, using his <a href="69.html">gaming</a> skills to outmaneuver his political opponents and maintain control over the government.</p>
+<p>"It's like he's playing a game of chess, except instead of pawns and knights, he's got tax breaks and budget cuts," said a political strategist. "He's always one step ahead of the competition."</p>
+<p>The Gaming King's <a href="206.html">gaming</a> lair has been equipped with a range of high-tech gadgets and gizmos, including a custom-built virtual reality simulator that allows him to simulate the experience of being in the Oval Office.</p>
+<p>"It's like a dream come true for him," said one former adviser. "He's got the whole thing rigged to his liking. He's the king of the game, and he's not going to let anyone else win."</p>
+<p>As the investigation into The Gaming King's shadow government continues, one thing is clear: the political landscape of Washington D.C. will never be the same again.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="249.html">Previous</a>
+            |
+            <a href="247.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BREAKING: Impeachment Crisis Deepens as Dystopian War Threatens America's Last Shred of</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="BREAKING: Impeachment Crisis Deepens as Dystopian War Threatens America's Last Shred of" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="BREAKING: Impeachment Crisis Deepens as Dystopian War Threatens America's Last Shred of" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("243");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>BREAKING: Impeachment Crisis Deepens as Dystopian War Threatens America's Last Shred of</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the <a href="49.html">United States</a> has found itself on the brink of a <a href="104.html">dystopian</a> <a href="237.html">war</a> that threatens to destroy the last shred of <a href="111.html">freedom</a> left in the country. The crisis deepened as lawmakers from both sides of the aisle failed to reach an agreement on the ongoing <a href="79.html">impeachment</a> proceedings, leading to a state of utter chaos and desperation.</p>
+<p>According to sources close to the matter, the situation has escalated to the point where the President, now convinced that he is the only one who truly understands the will of the people, has ordered the military to prepare for a full-scale invasion of the opposition party's stronghold.</p>
+<p>"We cannot allow these traitors to threaten our great nation any longer," the President was quoted as saying. "We must take drastic measures to protect the American people and ensure their <a href="47.html">freedom</a>, even if it means resorting to the most extreme measures."</p>
+<p>As tensions mounted, the Speaker of the House of Representatives was seen frantically trying to broker a last-minute deal to prevent the <a href="144.html">war</a> from breaking out. "We must find a way to come together and restore sanity to this great nation," the Speaker was quoted as saying. "Otherwise, we risk losing everything we hold dear."</p>
+<p>Meanwhile, the opposition party leaders were heard strategizing on how to take advantage of the crisis to their advantage. "This is the perfect opportunity for us to demonstrate our commitment to <a href="174.html">freedom</a> and democracy," one leader was overheard saying. "We must not let this chance slip through our fingers."</p>
+<p>As the crisis deepens, the fate of the <a href="128.html">United States</a> hangs in the balance. Will the country be able to avert the impending <a href="13.html">war</a> and find a peaceful resolution to the <a href="30.html">impeachment</a> proceedings? Or will the forces of <a href="234.html">freedom</a> and democracy be overwhelmed by the insatiable greed and ambition of those in power? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="244.html">Previous</a>
+            |
+            <a href="242.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
