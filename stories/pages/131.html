@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Senate Republicans Accused of Corruption in Latest Economic Scandal</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Senate Republicans Accused of Corruption in Latest Economic Scandal" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Senate Republicans Accused of Corruption in Latest Economic Scandal" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("131");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Senate Republicans Accused of Corruption in Latest Economic Scandal</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Washington D.C. - In a shocking turn of events, <a href="76.html">Senate</a> <a href="90.html">Republicans</a> have found themselves at the center of yet another political scandal. The latest allegations, which have been making waves in the nation's capital, suggest that members of the GOP have been engaging in corrupt practices in an effort to manipulate economic <a href="66.html">legislation</a> for personal gain.</p>
+<p>According to sources close to the investigation, <a href="30.html">Senate</a> <a href="11.html">Republicans</a> have been using their positions of power to push through <a href="45.html">legislation</a> that benefits their own business interests, while simultaneously stifling any efforts to address the growing economic disparities in the country.</p>
+<p>"It's clear that these senators have been using their positions for personal gain, rather than serving the interests of the American people," said a spokesperson for the <a href="62.html">Senate</a> Ethics Committee. "We will not stand for <a href="72.html">corruption</a> in any form, and we will do everything in our power to hold these senators accountable."</p>
+<p>The scandal has already sparked outrage among many in the political sphere, with many calling for the resignation of the accused senators. However, some have defended the senators, arguing that they are simply doing what is necessary to protect the interests of their constituents.</p>
+<p>"These senators are just trying to do what's best for their districts," said a spokesperson for the National Republican Senatorial Committee. "They are not corrupt, they are simply pragmatic and willing to do what it takes to get things done."</p>
+<p>Despite the defense, the investigation into the matter continues, with many expecting the findings to be damning. The scandal has already cast a shadow over the GOP's reputation, and it remains to be seen how the party will recover from the fallout.</p>
+<p>In related news, the stock market has seen a significant drop in response to the scandal, with many investors calling for greater transparency and accountability in the political sphere.</p>
+<p>As the situation continues to unfold, one thing is clear: the American people are growing increasingly frustrated with the political establishment, and it remains to be seen how the parties will respond to the growing calls for reform.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="132.html">Previous</a>
+            |
+            <a href="130.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
