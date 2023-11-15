@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FUTURE WARS: Republicans Unveil Shocking Economic Plan to Take Control of the 22nd Century!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="FUTURE WARS: Republicans Unveil Shocking Economic Plan to Take Control of the 22nd Century!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="FUTURE WARS: Republicans Unveil Shocking Economic Plan to Take Control of the 22nd Century!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("624");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>FUTURE WARS: Republicans Unveil Shocking Economic Plan to Take Control of the 22nd Century!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the Republican Party has unveiled a controversial economic plan to take control of the 22nd century. The plan, dubbed "Future Wars," aims to revolutionize the global economy and establish the United States as the dominant world power.</p>
+<p>According to sources within the party, the plan involves a series of aggressive military interventions and economic sanctions against rival nations. "We cannot afford to let other countries surpass us in the 22nd century," declared Senator John Smith, a leading proponent of the plan. "We must do whatever it takes to ensure our nation's dominance."</p>
+<p>The plan has sparked widespread outrage and skepticism, with many critics questioning its feasibility and ethical implications. "This is not a joke," said Dr. Jane Doe, a renowned economist and critic of the plan. "We cannot possibly predict what the future holds, let alone control it. This plan is nothing but a recipe for disaster."</p>
+<p>Despite the backlash, the Republican Party remains undeterred, insisting that the plan is necessary to ensure American prosperity and security. "We cannot afford to be complacent in the face of changing global dynamics," said President Jane Johnson. "We must be proactive and take bold action to secure our nation's future."</p>
+<p>The plan has also raised questions about the role of technology in shaping the future. "We must embrace <a href="93.html">futurism</a> and harness its power to our advantage," said Senator Bob Brown. "We cannot afford to be left behind in the 22nd century."</p>
+<p>As the debate rages on, one thing is clear: the future of the global economy is at stake. Will the United States emerge as the dominant world power, or will rival nations rise to challenge its dominance? Only time will tell. Stay tuned for further developments in this ongoing saga.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="625.html">Previous</a>
+            |
+            <a href="623.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
