@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Bill Threatens to Shut Down Mobile Games Over 'Political Manipulation' Concerns</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="New Bill Threatens to Shut Down Mobile Games Over 'Political Manipulation' Concerns" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="New Bill Threatens to Shut Down Mobile Games Over 'Political Manipulation' Concerns" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("495");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>New Bill Threatens to Shut Down Mobile Games Over 'Political Manipulation' Concerns</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, a new bill proposed by Congress has sparked controversy among mobile gamers and political analysts alike. The "Political Manipulation in Mobile Games Act" aims to ban any game that promotes or reinforces political ideologies, citing concerns that these games are "manipulating" players into supporting certain political agendas.</p>
+<p>According to the bill's sponsor, Representative James Johnson (R-TX), "We cannot allow our children to be indoctrinated with political propaganda through their mobile devices. It's time to put a stop to these insidious games that are trying to influence our youth."</p>
+<p>But not everyone is convinced. Critics argue that the bill is a clear infringement on free speech and creative expression, and that it could have unintended consequences for games that simply involve strategic decision-making.</p>
+<p>"This bill is a slippery slope," warned Senator Sarah Lee (D-CA). "If we start censoring games based on their political content, where do we draw the line? Will we next ban games that involve war or religion? It's a dangerous precedent."</p>
+<p>Meanwhile, mobile game developers are bracing for the worst. "This could be the death knell for our industry," said one anonymous developer. "How are we supposed to make games that are both fun and political without getting shut down?"</p>
+<p>But some see the bill as a much-needed measure to protect the public from the insidious influence of <a href="460.html">political games</a>. "It's time to take these games seriously and hold them accountable for their manipulative tactics," said political analyst Dr. Emily Chen. "We can't let our children be used as pawns in some game designer's political agenda."</p>
+<p>As the debate rages on, one thing is certain: the future of mobile <a href="403.html">gaming</a> hangs in the balance. Will the industry be able to adapt to the new rules, or will it be shut down by the government? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="496.html">Previous</a>
+            |
+            <a href="494.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
