@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached Senator Indicted for Mobile Game Addiction Scandal</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached Senator Indicted for Mobile Game Addiction Scandal" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached Senator Indicted for Mobile Game Addiction Scandal" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("547");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached Senator Indicted for Mobile Game Addiction Scandal</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, an <a href="248.html">impeached</a> Senator has been indicted for their alleged addiction to <a href="503.html">mobile games</a>. Senator Jane Smith, a Democrat from California, has been accused of neglecting her duties in the <a href="57.html">Senate</a> while obsessively playing games on her phone.</p>
+<p>According to sources close to the investigation, Smith has been spending up to 12 hours a day on various <a href="23.html">mobile games</a>, including "Angry Birds," "Candy Crush," and "Fortnite." When asked for comment, Smith's lawyer denied any wrongdoing, claiming that his client's addiction was actually a sign of "innovative thinking and adaptability in the digital age."</p>
+<p>However, experts say that Smith's addiction has had severe consequences for her ability to perform her duties in the <a href="257.html">Senate</a>. "Mobile game addiction is a real condition that can affect people of all ages," said Dr. John Doe, a leading psychologist in the field. "Senator Smith's actions are a clear violation of the public trust, and she must be held accountable."</p>
+<p>As part of the investigation, prosecutors have subpoenaed data from Smith's phone, which reveals a disturbing pattern of behavior. In one 24-hour period, Smith spent over five hours playing "Pokémon Go," an game that requires players to physically move around in order to capture virtual creatures. When questioned about this, Smith claimed that she was "using the game as a form of exercise."</p>
+<p>Meanwhile, <a href="211.html">Democrats</a> in the <a href="479.html">Senate</a> have issued a statement defending Smith's right to game, saying that "gaming is a fundamental right that should be protected at all costs." Republicans, on the other hand, have called for Smith's immediate resignation, accusing her of "abusing her position of power for the sake of personal entertainment."</p>
+<p>As the scandal continues to unfold, one thing is clear: <a href="121.html">mobile games</a> have become a major distraction in the halls of power. In response, the <a href="62.html">Senate</a> has announced plans to establish a new committee dedicated to studying the impact of gaming on lawmakers' productivity and mental health.</p>
+<p>Stay tuned for further updates on this developing story, as the nation struggles to keep up with the outrageous antics of its elected officials.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="548.html">Previous</a>
+            |
+            <a href="546.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
