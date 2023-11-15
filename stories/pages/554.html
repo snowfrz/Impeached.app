@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached President Secretly Developing New Constitution to Save Political Legacy</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached President Secretly Developing New Constitution to Save Political Legacy" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached President Secretly Developing New Constitution to Save Political Legacy" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("554");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached President Secretly Developing New Constitution to Save Political Legacy</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, former President James Smith has been secretly working on a new constitution in an effort to salvage his tarnished political legacy. According to sources close to the former leader, Smith has been holed up in his underground bunker for the past few months, pouring over ancient texts and <a href="220.html">strategy games</a> in an attempt to create a new framework for governance.</p>
+<p>The <a href="431.html">impeached</a> President's alleged constitution-writing spree has left many in the political circle stunned, as it comes at a time when his once-promising career has been in freefall. However, insiders claim that Smith is determined to prove his detractors wrong and leave a lasting legacy.</p>
+<p>"President Smith has always been a visionary, and this is just the latest example of that," said a former advisor. "He's not content to simply sit back and twiddle his thumbs while his political opponents take the spotlight. He's always thinking several steps ahead, and this new constitution is just the latest proof of that."</p>
+<p>When asked about the potential implications of such a move, the advisor added with a wink, "Who knows? Maybe this will be the start of a new political movement. Maybe President Smith will be the one to usher in a new era of governance. Only time will tell, but one thing is for sure - this is a development that will be watched closely by political insiders across the country."</p>
+<p>Meanwhile, political opponents of Smith have been quick to criticize his actions, labeling them as a desperate bid to distract from his recent legal troubles. "This is just another example of President Smith's habit of using smoke and mirrors to distract from his own failures," said a spokesperson for the opposition party. "We'll be watching closely to see if he actually manages to produce something of substance, or if this is just another one of his empty promises."</p>
+<p>Despite the criticism, Smith remains undeterred, and sources close to the former President claim that he is confident that his new constitution will be the key to saving his political legacy. "He knows that this is his last chance to make a real impact on the political landscape," said the advisor. "And he's determined to make it count."</p>
+<p>As the political world waits with bated breath to see what comes of President Smith's new constitution, one thing is certain - this is a development that will be remembered for years to come.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="555.html">Previous</a>
+            |
+            <a href="553.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
