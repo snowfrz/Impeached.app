@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shocking New Evidence Implicates Top Republicans in Mobile Game Corruption Scandal</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Shocking New Evidence Implicates Top Republicans in Mobile Game Corruption Scandal" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Shocking New Evidence Implicates Top Republicans in Mobile Game Corruption Scandal" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("627");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Shocking New Evidence Implicates Top Republicans in Mobile Game Corruption Scandal</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, new evidence has surfaced implicating several high-ranking <a href="568.html">Republicans</a> in a massive <a href="1.html">corruption</a> scandal involving the mobile gaming industry. The investigation, which has been ongoing for months, has revealed a complex web of deceit and collusion that reaches all the way to the <a href="110.html">Supreme Court</a>.</p>
+<p>According to sources close to the investigation, top <a href="89.html">Republicans</a> have been secretly investing in mobile game development companies, using their political influence to ensure that their games are successful and profitable. These games, it turns out, are not just mindless time-wasters, but rather sophisticated political propaganda machines designed to manipulate public opinion and sway the outcome of elections.</p>
+<p>"We have evidence that suggests several prominent <a href="586.html">Republicans</a> have been using <a href="309.html">mobile games</a> as a means of undermining the democratic process," said a senior investigator, speaking on condition of anonymity. "These games are not just fun and games - they're a form of political subterfuge."</p>
+<p>The scandal has already claimed several high-profile casualties, including a former <a href="16.html">Supreme Court</a> justice who was caught investing in a game that promised to "cure voters of their liberal tendencies through a series of rigorous mental exercises."</p>
+<p>Other politicians implicated in the scandal include a prominent senator who was found to have a financial stake in a game that simulated the presidency, and a influential congressman who was caught promoting a game that rewarded players for completing tasks related to the Republican party platform.</p>
+<p>As the investigation continues to unfold, it appears that the reach of the <a href="55.html">corruption</a> goes far beyond just the political arena. Mobile game developers have been accused of using their games to manipulate player data and influence political decisions, while social media platforms have been found to be complicit in the scandal by allowing the games to spread undetected.</p>
+<p>"This is not just a political scandal - it's a full-blown cultural crisis," said a cultural critic. "We're talking about a generation of young people who have been raised on a diet of political propaganda disguised as entertainment. It's a slippery slope, and we're not sure where it will end."</p>
+<p>As the public awaits the outcome of the investigation, one thing is certain: the world of mobile gaming will never be the same.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="628.html">Previous</a>
+            |
+            <a href="626.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
