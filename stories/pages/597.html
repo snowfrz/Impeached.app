@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Constitutional Crisis Looms: Impeached President Faces Unprecedented Legislative Showdown</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Constitutional Crisis Looms: Impeached President Faces Unprecedented Legislative Showdown" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Constitutional Crisis Looms: Impeached President Faces Unprecedented Legislative Showdown" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("597");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Constitutional Crisis Looms: Impeached President Faces Unprecedented Legislative Showdown</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a stunning turn of events, the <a href="467.html">impeached</a> President, John Q. Public, faces an unprecedented legislative showdown that could potentially lead to a constitutional crisis.</p>
+<p>According to sources within <a href="580.html">Congress</a>, the President's recent impeachment has sparked a heated debate among lawmakers, with many calling for his immediate removal from office. However, the President's supporters are adamant that he must remain in power, citing his tireless efforts to "drain the swamp" and "Make America Great Again."</p>
+<p>As the political drama unfolds, the President's opponents are pushing for the passage of a landmark piece of <a href="299.html">legislation</a> that would strip him of his powers and pave the way for a special <a href="562.html">election</a>. The bill, known as the "Emergency Powers Limitation Act," has gained widespread support among lawmakers, with many hailing it as a necessary measure to protect the integrity of the electoral process.</p>
+<p>However, the President's allies are warning of a "constitutional crisis" should the bill be passed. "This is a direct attack on the President's authority," said one senior advisor. "We will not stand idly by while the opposition tries to overthrow a duly-elected President."</p>
+<p>Meanwhile, the President himself has remained eerily silent on the matter, fueling speculation that he may be planning a dramatic comeback. "He's been in seclusion for weeks," said a source close to the White House. "No one knows what he's planning, but one thing is for sure: he's not going down without a fight."</p>
+<p>As the political tensions reach a boiling point, many are wondering how this showdown will ultimately play out. Will the President's opponents succeed in their quest to remove him from office? Or will he manage to turn the tables on them and emerge victorious? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="598.html">Previous</a>
+            |
+            <a href="596.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
