@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached Politician's Shocking Political Comeback Plan Revealed!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached Politician's Shocking Political Comeback Plan Revealed!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached Politician's Shocking Political Comeback Plan Revealed!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("445");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached Politician's Shocking Political Comeback Plan Revealed!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a stunning turn of events, former President James "Jimmy" Johnson has announced his plans to make a surprise political comeback, just months after being <a href="304.html">impeached</a> and removed from office.</p>
+<p>According to sources close to the former President, Johnson has been secretly plotting his return to the political scene, using his time away from the White House to develop a new, innovative strategy that he believes will guarantee his victory in the next election.</p>
+<p>"Jimmy's got a plan, and it's a doozy," said one political insider, who wished to remain anonymous. "He's been studying the greats, from Lincoln to Nixon, and he's come up with a strategy that will make his opponents look like amateurs."</p>
+<p>The plan, which has been dubbed "Operation: Political Resurrection," involves a series of high-profile appearances, including a highly anticipated speech at the annual State of the Union Address, where Johnson will reportedly make a bold declaration of his intentions to reclaim the presidency.</p>
+<p>"Jimmy's going to come out of the gates swinging," said the insider. "He's going to take on the establishment, expose their corruption and hypocrisy, and prove that he's the only candidate who can truly fix this broken political system."</p>
+<p>But Johnson's opponents are not taking his comeback plans lightly. In a recent interview, former Vice President Richard "Dick" Cheney threatened to "go nuclear" on Johnson if he ever gets back into office.</p>
+<p>"Jimmy's a menace, and he's going to pay the price for his treachery," Cheney sneered. "He thinks he can just waltz back into the White House and pick up where he left off? Think again, Jimmy. You're going to find yourself on the wrong end of a Cheney-led smear campaign, and you're going to regret the day you ever decided to mess with the Cheneys."</p>
+<p>Despite the threats, Johnson remains undeterred, confident in his ability to outmaneuver his opponents and secure the nomination.</p>
+<p>"Jimmy's got this," said one of his advisors. "He's been preparing for this moment his whole life, and he's not going to let anyone stand in his way. He's the only candidate who can truly unite this country, and he's going to prove it in the upcoming election."</p>
+<p>Only time will tell if Johnson's comeback plan will be successful, but one thing is certain: the political landscape in the <a href="436.html">United States</a> is about to get a lot more interesting.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="446.html">Previous</a>
+            |
+            <a href="444.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
