@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Election Shocker: Constitutional Experts Reveal Secret Strategy Games Governments of the Future Will Play!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Election Shocker: Constitutional Experts Reveal Secret Strategy Games Governments of the Future Will Play!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Election Shocker: Constitutional Experts Reveal Secret Strategy Games Governments of the Future Will Play!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("476");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Election Shocker: Constitutional Experts Reveal Secret Strategy Games Governments of the Future Will Play!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a stunning revelation that is set to rock the very foundations of democracy, a group of constitutional experts have uncovered a secret strategy game that governments of the future will be playing. The game, known as "Politicks," is a complex and intricate system that will determine the fate of nations for generations to come.</p>
+<p>According to sources close to the matter, Politicks is a game of high-stakes negotiation and backroom deals, where governments will be forced to make difficult decisions about the future of their respective countries. The game will be played by a select group of high-ranking officials, who will be tasked with navigating the complex web of international relations and finding solutions to some of the world's most pressing problems.</p>
+<p>"Think of it as a futuristic game of chess," explained Dr. Maria Rodriguez, a leading expert on constitutional law. "Except instead of pieces on a board, you have entire nations at stake. It's a game of strategy and diplomacy on a global scale."</p>
+<p>But don't just take our word for it. Here are some real quotes from government officials who have been briefed on the game:</p>
+<p>"I can't believe they're actually serious about this," said Senator John Smith of Ohio. "I mean, come on, a game of politics? It's like they're trying to turn our country into a circus."</p>
+<p>"I'm all for finding new and innovative ways to solve our problems," said Governor Jane Doe of California. "But this? This is just ridiculous. Who are they kidding?"</p>
+<p>Despite the initial skepticism, many experts believe that Politicks has the potential to revolutionize the way governments make decisions. By forcing officials to think strategically and consider the long-term implications of their actions, the game could lead to more sustainable and effective governance.</p>
+<p>"It's not just about winning or losing," said Dr. Rodriguez. "It's about finding solutions that benefit everyone. It's about creating a better future for all of humanity."</p>
+<p>But don't hold your breath. As one insider put it, "Politicks is a game of smoke and mirrors. It's a game of cat and mouse, where no one knows who's really in control."</p>
+<p>So there you have it, folks. The future of politics is here, and it's a doozy. Get ready to play the game of a lifetime. Or at least, that's what they want you to think.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="477.html">Previous</a>
+            |
+            <a href="475.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
