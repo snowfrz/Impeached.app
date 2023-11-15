@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REVEALED: Secret Documents Expose Republican Party's Decades-Old Conspiracy to Undermine American Democracy</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="REVEALED: Secret Documents Expose Republican Party's Decades-Old Conspiracy to Undermine American Democracy" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="REVEALED: Secret Documents Expose Republican Party's Decades-Old Conspiracy to Undermine American Democracy" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("412");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>REVEALED: Secret Documents Expose Republican Party's Decades-Old Conspiracy to Undermine American Democracy</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, a cache of recently unearthed documents has revealed a long-standing conspiracy by the Republican Party to undermine American democracy. The documents, spanning several decades, provide concrete evidence of the party's systematic efforts to manipulate the political and economic systems of the United States for their own gain.</p>
+<p>According to the documents, the conspiracy began in the 1970s, when a group of high-ranking Republican officials, including former President Richard Nixon and current Speaker of the House, John Boehner, hatched a plan to dismantle the country's social safety net programs. The plan, code-named "Operation: Freedom Fries," aimed to starve the poor and vulnerable of essential services, such as food and healthcare, in order to create a more docile and compliant citizenry.</p>
+<p>As the years progressed, the conspiracy evolved to include a range of other tactics, including voter suppression, media manipulation, and the manipulation of economic policies to favor the wealthy elite. The documents reveal that even the most seemingly innocuous political maneuvers, such as the repeal of the Glass-Steagall Act, were actually part of a larger scheme to enrich the party's financial backers at the expense of the general population.</p>
+<p>Perhaps most shockingly, the documents suggest that the Republican Party has been actively working to undermine the very foundations of American democracy, including the electoral process and the rule of law. In one particularly damning passage, a party strategist is quoted as saying, "We don't need to win elections to maintain power. We just need to make sure the game is rigged in our favor."</p>
+<p>Despite the damning evidence contained within the documents, the Republican Party has yet to issue a formal response to the revelations. When reached for comment, a spokesperson for the party declined to comment, citing an ongoing investigation into the matter.</p>
+<p>In light of these findings, it remains to be seen how the American public will react to this latest bombshell. Will they demand justice and accountability from their elected officials? Or will they simply shrug and continue to support a political system that seems to be working against their best interests? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="413.html">Previous</a>
+            |
+            <a href="411.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
