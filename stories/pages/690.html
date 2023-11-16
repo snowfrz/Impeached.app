@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached Government to Introduce New 'Futurist Freedom Act': Controversial Move Sparks Debate!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached Government to Introduce New 'Futurist Freedom Act': Controversial Move Sparks Debate!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached Government to Introduce New 'Futurist Freedom Act': Controversial Move Sparks Debate!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("690");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached Government to Introduce New 'Futurist Freedom Act': Controversial Move Sparks Debate!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the recently <a href="173.html">impeached</a> government has announced plans to introduce a new piece of legislation aimed at promoting "futurist <a href="18.html">freedom</a>." The proposed bill, dubbed the "Futurist Freedom Act," has sparked heated debate among lawmakers and citizens alike.</p>
+<p>According to sources within the government, the act aims to "boldly assert the rights of individuals to embrace the future with unbridled enthusiasm." The bill proposes to grant citizens the <a href="153.html">freedom</a> to explore new frontiers of technology, innovation, and social progress, without fear of reprisal or oppression.</p>
+<p>However, not everyone is convinced of the bill's merits. Critics argue that the proposed legislation could lead to a slippery slope of moral decay, as individuals are given license to indulge in "futurist excesses" without any regard for ethical boundaries.</p>
+<p>"We cannot allow the government to condone or encourage such reckless behavior," said a prominent opponent of the bill. "Our society must always prioritize the values of tradition, stability, and accountability."</p>
+<p>Despite the opposition, supporters of the bill remain undeterred. "The future is here, and it's time we embrace it," said a spokesperson for the government. "With the Futurist Freedom Act, we are giving citizens the opportunity to be the change they want to see in the world."</p>
+<p>As the debate rages on, one thing is clear: the introduction of the Futurist Freedom Act has the potential to be a game-changer in the political landscape. Will it pave the way for a brighter, more progressive future, or will it lead to chaos and confusion? Only time will tell. Stay tuned for further developments in this exciting story!</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="691.html">Previous</a>
+            |
+            <a href="689.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
