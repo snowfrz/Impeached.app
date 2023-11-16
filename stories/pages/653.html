@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shocking Discovery in Government Lab: Secret Game Changes the Course of History!</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Shocking Discovery in Government Lab: Secret Game Changes the Course of History!" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Shocking Discovery in Government Lab: Secret Game Changes the Course of History!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("653");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Shocking Discovery in Government Lab: Secret Game Changes the Course of History!</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Scientists at a top-secret government laboratory have made a groundbreaking discovery that is set to change the course of <a href="394.html">history</a>. In a shocking turn of events, it has been revealed that the government has been secretly developing a game-changing technology that could have far-reaching consequences for the future of humanity.</p>
+<p>According to sources within the laboratory, the team has been working on a revolutionary new game that utilizes advanced quantum mechanics and artificial intelligence to simulate complex historical events. The game, codenamed "Project: Timeline Shift," has been in development for over a decade and has been shrouded in secrecy until now.</p>
+<p>But what exactly is this game, and how does it work? Sources inside the laboratory reveal that Project: Timeline Shift is a multiplayer online game that allows players to manipulate and interact with historical events in real-time. Players are given the ability to make choices that can change the course of <a href="165.html">history</a>, all while learning about the complex political, social, and economic factors that shape the world we live in.</p>
+<p>But the real kicker is that the game is not just a simple simulation – it's been designed to actuality change the course of <a href="26.html">history</a>. By manipulating the game's parameters, players can alter the outcome of historical events, creating a new and improved timeline that could potentially lead to a better future for humanity.</p>
+<p>The implications of this discovery are staggering. Imagine if you could go back in time and prevent a world war, or if you could manipulate the outcome of a presidential election to ensure a more just and equitable society. The possibilities are endless, and the government is eager to explore these possibilities further.</p>
+<p>Of course, not everyone is thrilled about this development. Critics argue that the government has no business meddling with the timeline of <a href="16.html">history</a>, and that the potential consequences of such manipulation are too great to bear. But the government remains steadfast in their support for Project: Timeline Shift, insisting that it could be the key to unlocking a brighter future for all of humanity.</p>
+<p>As the world waits with bated breath to see what the future holds, one thing is certain – the discovery of Project: Timeline Shift has changed the game forever. Will it be used for good or for ill? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="654.html">Previous</a>
+            |
+            <a href="652.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
