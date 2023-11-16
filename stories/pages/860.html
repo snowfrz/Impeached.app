@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Constitutional Crisis Looms in Strategy Game Controversy: Will History Repeat Itself?</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Constitutional Crisis Looms in Strategy Game Controversy: Will History Repeat Itself?" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Constitutional Crisis Looms in Strategy Game Controversy: Will History Repeat Itself?" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("860");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Constitutional Crisis Looms in Strategy Game Controversy: Will History Repeat Itself?</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the nation has been thrown into chaos after a heated <a href="789.html">controversy</a> surrounding a popular strategy game has raised concerns about the potential for a constitutional crisis. The game, known as "Political Power Play," has been at the center of a heated debate after players began to accuse each other of cheating and manipulating the game's algorithms to gain an unfair advantage.</p>
+<p>As tensions escalated, players from both sides of the aisle began to take to social media to air their grievances, with some even calling for the game's removal from the market. "This game is a <a href="836.html">disaster</a>," said one player, who wished to remain anonymous. "It's clear that the developers have a political agenda and are trying to manipulate the game to favor one side over the other."</p>
+<p>But as the debate raged on, some experts began to warn that the situation could have far-reaching consequences. "We're seeing a repeat of <a href="352.html">history</a> here," said constitutional law expert, Professor James Johnson. "The same patterns of manipulation and cheating that we saw in the early days of our nation are playing out once again in this game. It's a clear warning sign that we need to take a closer look at the game's algorithms and make sure they're fair and transparent."</p>
+<p>As the situation continues to unfold, many are left wondering if the <a href="431.html">controversy</a> will lead to a constitutional crisis. "It's a dangerous game we're playing here," said political analyst, Sarah Lee. "The stakes are high, and the potential for <a href="358.html">disaster</a> is real. We need to take a step back and assess the situation before it's too late."</p>
+<p>In response to the <a href="504.html">controversy</a>, the game's developers have released a statement denying any claims of manipulation or cheating. "The game is designed to be fair and unbiased," said a spokesperson for the company. "We understand that some players may have differing opinions on the game's algorithms, but we assure you that we are committed to providing a fun and enjoyable experience for all players."</p>
+<p>Despite the statement, many players remain skeptical, and the <a href="155.html">controversy</a> shows no signs of subsiding. As the situation continues to unfold, one thing is certain: the fate of the game, and the future of our nation, hangs in the balance.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="861.html">Previous</a>
+            |
+            <a href="859.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached President Found Guilty of Strategic Blunders in Futuristic Political Satire Game</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached President Found Guilty of Strategic Blunders in Futuristic Political Satire Game" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached President Found Guilty of Strategic Blunders in Futuristic Political Satire Game" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("856");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached President Found Guilty of Strategic Blunders in Futuristic Political Satire Game</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, former President James "Jimbo" Johnson was found guilty of strategic blunders in a futuristic <a href="52.html">political satire</a> game, "Politics 2050." The game, which simulates the political landscape of the year 2050, pits players against each other in a battle for power and influence.</p>
+<p>According to sources close to the game, Johnson was found guilty of making a series of disastrous decisions that ultimately led to his downfall. Among the most egregious offenses was his decision to invade the fictional country of "Norvia," a move that was widely criticized by both political opponents and experts in the field of political strategy.</p>
+<p>"President Johnson's decision to invade Norvia was a textbook example of a strategic blunder," said Dr. Jane Smith, a political science professor at the fictional University of Tomorrow. "He completely misread the situation on the ground and paid the price for it."</p>
+<p>But Johnson's troubles didn't end there. He was also found guilty of neglecting to prepare for the inevitable rise of artificial intelligence, which many experts say will play a major role in shaping the political landscape of the future.</p>
+<p>"President Johnson was completely oblivious to the threat of AI," said former Presidential advisor, Bob "B-Dawg" Brown. "He thought he could outsmart the machines, but in the end, he was outsmarted by his own ignorance."</p>
+<p>Despite his guilty verdict, Johnson remains defiant, insisting that he was the victim of a rigged game.</p>
+<p>"This is a witch hunt, plain and simple," Johnson said in a statement. "I'm the victim of a conspiracy to discredit me and my administration. I'll have my day in court, and when that day comes, the truth will come out."</p>
+<p>But for now, it seems that Johnson's political career is in tatters, and his legacy is forever marred by his disastrous decision to invade Norvia. As the old saying goes, "Politics is a game of inches, and President Johnson just lost a few crucial inches."</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="857.html">Previous</a>
+            |
+            <a href="855.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>

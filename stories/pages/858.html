@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impeached President's Constitutional Crisis Threatens to Upend Election History</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Impeached President's Constitutional Crisis Threatens to Upend Election History" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Impeached President's Constitutional Crisis Threatens to Upend Election History" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("858");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Impeached President's Constitutional Crisis Threatens to Upend Election History</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the impeachment trial of former <a href="50.html">President</a> James Johnson has sent shockwaves through the political landscape, threatening to upend the very fabric of <a href="188.html">election</a> <a href="525.html">history</a>.</p>
+<p>As the trial enters its third day, the once-esteemed politician has found himself at the center of a constitutional crisis, with many questioning the legitimacy of his presidency.</p>
+<p>"It's simply unprecedented," said political analyst Jane Doe. "We've seen impeachments before, but never has a <a href="245.html">President</a> faced such a dire situation. The <a href="559.html">Constitution</a> is crying out for help."</p>
+<p>The crisis began when <a href="39.html">President</a> Johnson was accused of, well, actually doing something wrong. Despite his ardent denials, the evidence against him has been mounting, with many calling for his immediate removal from office.</p>
+<p>But the implications of such an action go far beyond the presidency itself. If Johnson is <a href="615.html">impeached</a> and removed, it could set a dangerous precedent for future <a href="480.html">election</a>s.</p>
+<p>"Imagine if this happened to any other candidate," said political strategist Bob Smith. "It would be a complete disaster. The electorate would lose faith in the entire process."</p>
+<p>And indeed, the fallout from this crisis has already been felt across the country. Many voters are questioning the validity of <a href="701.html">election</a>s, with some even calling for a complete overhaul of the system.</p>
+<p>"It's a slippery slope," said longtime political observer Mary Brown. "Once you start down this path, there's no telling where it will end."</p>
+<p>As the trial continues, one thing is clear: this is no ordinary <a href="651.html">election</a>. The very fate of democracy itself hangs in the balance.</p>
+<p>But hey, at least the drama will make for great clickbait headlines, right? #ImpeachmentTrial #<a href="844.html">Constitution</a>alCrisis #ElectionHistory #<a href="848.html">President</a>ialProblems</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="859.html">Previous</a>
+            |
+            <a href="857.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
