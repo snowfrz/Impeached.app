@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Democrats Plot Shocking Move to Pack Supreme Court, Upending Political Games Forever</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Democrats Plot Shocking Move to Pack Supreme Court, Upending Political Games Forever" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Democrats Plot Shocking Move to Pack Supreme Court, Upending Political Games Forever" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("708");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Democrats Plot Shocking Move to Pack Supreme Court, Upending Political Games Forever</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, members of the Democratic party have been secretly meeting to discuss a bold plan to upend the political landscape forever. Sources close to the party have revealed that they are plotting to "pack" the <a href="418.html">Supreme Court</a>, a move that could potentially grant them the upper hand in the ever-contentious battle between the two parties.</p>
+<p>According to insiders, the <a href="46.html">Democrats</a> are fed up with the <a href="361.html">Republicans</a> constantly playing the "judicial nomination game" and are determined to level the playing field. "We've had it with these guys constantly trying to stack the deck in their favor," said one Democratic strategist on condition of anonymity. "It's time we took matters into our own hands."</p>
+<p>The plan, known as the "Court-Packing Bill of 2023," would involve adding up to six new justices to the <a href="625.html">Supreme Court</a>, effectively giving the <a href="512.html">Democrats</a> a majority on the bench. This would allow them to easily pass legislation and strike down any laws they deem unconstitutional, effectively ending the political stalemate that has plagued the nation for decades.</p>
+<p>But not everyone is on board with the plan. <a href="251.html">Republicans</a> are already crying foul, calling the move a "power grab" and "an attack on the rule of law." "This is exactly what we've been warning about," said Senate Majority Leader Mitch McConnell (R-KY). "The <a href="71.html">Democrats</a> will stop at nothing to gain power and control."</p>
+<p>Despite the backlash, many <a href="264.html">Democrats</a> see the plan as a necessary evil to restore balance to the political landscape. "The <a href="386.html">Supreme Court</a> has been hijacked by right-wing extremists for far too long," said Rep. Alexandria Ocasio-Cortez (D-NY). "It's time we took back control and put the judiciary back in the hands of the people."</p>
+<p>As the debate rages on, one thing is certain: the political landscape will never be the same. The Court-Packing Bill of 2023 has the potential to upend the status quo and forever change the way politics is played in America. Stay tuned for further developments in this ongoing saga.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="709.html">Previous</a>
+            |
+            <a href="707.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
