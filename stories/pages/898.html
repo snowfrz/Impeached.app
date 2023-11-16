@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Supreme Court Shock: New Legislation Threatens Mobile Game Industry's Future</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Supreme Court Shock: New Legislation Threatens Mobile Game Industry's Future" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Supreme Court Shock: New Legislation Threatens Mobile Game Industry's Future" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("898");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Supreme Court Shock: New Legislation Threatens Mobile Game Industry's Future</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a stunning turn of events, the <a href="487.html">Supreme Court</a> has recently passed a new piece of <a href="734.html">legislation</a> that has left the mobile game industry reeling. The bill, titled the "Mobile Game Protection Act," has sparked <a href="655.html">controversy</a> among game developers and players alike, as it aims to regulate the use of in-app purchases and virtual currency in <a href="859.html">mobile games</a>.</p>
+<p>According to sources within the industry, the <a href="687.html">legislation</a> could have far-reaching consequences for the future of mobile gaming. "This could be the death knell for the industry as we know it," said one anonymous game developer. "The last thing we need is the government micromanaging our games."</p>
+<p>The act requires mobile game developers to clearly disclose the odds of receiving in-game items through in-app purchases, and to provide players with the option to opt-out of these purchases. It also prohibits the use of predatory tactics, such as creating "power-ups" that are only available through purchase.</p>
+<p>But the most controversial aspect of the bill is its impact on virtual currency. Under the new <a href="667.html">legislation</a>, virtual currency must be treated as a legal form of payment, and game developers must provide players with a way to convert their virtual assets into real money.</p>
+<p>The move has been met with fierce resistance from the gaming industry, with many arguing that the <a href="852.html">legislation</a> is an overreach of government power. "The government has no business regulating how games are designed and sold," said a spokesperson for the Interactive Gaming Association. "This is a clear violation of the First Amendment."</p>
+<p>But not everyone is opposed to the <a href="561.html">legislation</a>. Some lawmakers see it as a necessary measure to protect consumers from exploitation. "Mobile games are a multi-billion dollar industry, and it's time for them to be held accountable," said Senator Jane Smith. "This <a href="638.html">legislation</a> will ensure that players are treated fairly and that they're not taken advantage of by predatory game developers."</p>
+<p>As the debate rages on, one thing is clear: the future of mobile gaming hangs in the balance. Will the industry be able to adapt to the new regulations, or will it collapse under the weight of government interference? Only time will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="899.html">Previous</a>
+            |
+            <a href="897.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
