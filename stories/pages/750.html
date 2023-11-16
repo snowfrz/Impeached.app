@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Political Game of Thrones: Can Candidates Outmaneuver the Odds in the Election Battlefield?</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="Political Game of Thrones: Can Candidates Outmaneuver the Odds in the Election Battlefield?" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Political Game of Thrones: Can Candidates Outmaneuver the Odds in the Election Battlefield?" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("750");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Political Game of Thrones: Can Candidates Outmaneuver the Odds in the Election Battlefield?</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the race for the White House has taken a surprising twist as candidates are now openly embracing the concept of "Political Game of Thrones." Sources close to the campaigns reveal that strategists are secretly playing a high-stakes game of Risk, Monopoly, and even Dungeons & Dragons to gain the upper hand in the <a href="620.html">election</a> battlefield.</p>
+<p>"It's all about outmaneuvering the odds," said a top advisor to a leading candidate. "By using game theory and strategic thinking, we can predict our opponents' moves and counter them before they even happen. It's like a never-ending game of chess, but with more fireballs and dragons."</p>
+<p>The trend has become so popular that some candidates are even hiring professional gamers to join their campaign teams. "We're not just fighting for votes, we're fighting for the Iron Throne," joked one <a href="548.html">gaming</a> enthusiast turned political consultant.</p>
+<p>But not everyone is convinced of the effectiveness of this unconventional approach. "Politics is not a game, it's people's lives," said a rival candidate's spokesperson. "Using game theory to manipulate voters is nothing more than a cheap trick, and it undermines the very democratic process we're supposed to be upholding."</p>
+<p>Despite the controversy, the trend shows no signs of slowing down. In fact, some campaigns are taking it to the next level by hosting their own <a href="447.html">gaming</a> tournaments and events, where supporters can compete against each other for bragging rights and exclusive campaign merchandise.</p>
+<p>As one observer noted, "Politics has never been more exciting. Or more absurd."</p>
+<p>In related news, a new political action committee (PAC) has been formed to promote the use of game-based strategy in politics. "We believe that by leveraging the power of <a href="639.html">gaming</a>, we can create a more engaged and informed electorate," said the PAC's founder. "And who knows, maybe one day we'll have a president who's actually good at Mario Kart."</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="751.html">Previous</a>
+            |
+            <a href="749.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
