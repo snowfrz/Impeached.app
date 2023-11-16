@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BREAKING: New Tax Laws Spark Controversy, Economic Uncertainty</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="BREAKING: New Tax Laws Spark Controversy, Economic Uncertainty" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="BREAKING: New Tax Laws Spark Controversy, Economic Uncertainty" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("880");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>BREAKING: New Tax Laws Spark Controversy, Economic Uncertainty</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, the latest tax laws have sparked <a href="615.html">controversy</a> and economic uncertainty among lawmakers and citizens alike. The new <a href="452.html">legislation</a>, passed by Congress with lightning speed and little scrutiny, has been met with fierce resistance from both sides of the aisle.</p>
+<p>"This is a complete and total disaster," declared Senator John Q. Public, a vocal opponent of the new laws. "We're essentially giving tax breaks to the richest among us, while simultaneously crippling social programs that benefit the most vulnerable. It's a recipe for economic disaster."</p>
+<p>But not everyone is convinced. Senator Jane Doe, a key supporter of the new <a href="156.html">legislation</a>, insisted that the laws will "stimulate economic growth and create jobs" and that "the end justifies the means."</p>
+<p>As the debate rages on, one thing is clear: the new tax laws have the potential to upend the entire political landscape. With the fate of the <a href="79.html">legislation</a> hanging in the balance, the country is on edge, waiting to see what will happen next.</p>
+<p>But amidst all the drama, one thing has become increasingly clear: <a href="552.html">war</a> is coming. And no, we're not talking about the traditional kind. We're talking about the kind of <a href="733.html">war</a> that only the government and the tax code can wage.</p>
+<p>"This is a declaration of economic <a href="576.html">war</a>," <a href="867.html">war</a>ned economist Dr. Bob Smith. "The new tax laws are a direct attack on the middle class, and they will not stand. We will fight this with every last breath in our bodies."</p>
+<p>And so, the stage is set for a battle that will determine the very fate of the nation. Will the new tax laws stand, or will they be defeated? Only time will tell. But one thing is for sure: this is a <a href="561.html">war</a> that no one will forget.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="881.html">Previous</a>
+            |
+            <a href="879.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
