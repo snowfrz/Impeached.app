@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>President Under Fire: New Evidence Reveals Widespread Corruption in the House of Representatives</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+
+    <meta property="og:title" content="President Under Fire: New Evidence Reveals Widespread Corruption in the House of Representatives" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="President Under Fire: New Evidence Reveals Widespread Corruption in the House of Representatives" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("818");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>President Under Fire: New Evidence Reveals Widespread Corruption in the House of Representatives</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Washington D.C. - In a shocking turn of events, new evidence has surfaced revealing widespread <a href="451.html">corruption</a> within the <a href="211.html">House of Representatives</a>. The scandal, which has been simmering under the surface for months, has finally reached a boiling point, with calls for <a href="73.html">President</a> Flavius Maximus to take action.</p>
+<p>According to sources within the Capitol, several high-ranking officials have been caught red-handed accepting bribes from special interest groups in exchange for political favors. The list of accused includes several well-known politicians, including House Speaker, Gloriana Thornton, and House Majority Leader, Maximillian McSnively.</p>
+<p>"It's a disgrace, plain and simple," said <a href="333.html">President</a> Maximus in a statement. "The American people expect their elected officials to act with integrity and transparency, not to line their own pockets with ill-gotten gains."</p>
+<p>But the <a href="214.html">corruption</a> doesn't stop there. Sources reveal that several members of the <a href="354.html">President</a>'s own administration have been involved in the scheme, including several high-ranking advisors and cabinet members.</p>
+<p>"It's a cancer that's eating away at the very fabric of our democracy," said one source, who wished to remain anonymous. "We need to take action, and take it now, before it's too late."</p>
+<p>The <a href="21.html">President</a> has announced that he will be holding an emergency meeting with top advisors and Congressional leaders to address the issue. But with the <a href="402.html">President</a>'s own approval ratings sagging, some are questioning whether he has the political capital to take on the <a href="627.html">corruption</a> in the House.</p>
+<p>As the scandal continues to unfold, one thing is clear: the American people are growing increasingly frustrated with the political establishment, and demanding change. Whether the <a href="456.html">President</a> can deliver on that promise remains to be seen. Stay tuned for further updates in this developing story.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="819.html">Previous</a>
+            |
+            <a href="817.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
