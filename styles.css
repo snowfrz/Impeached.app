@@ -1,13 +1,14 @@
 @font-face {
     font-family: munro;
     src: url("munro_small.ttf");
+    font-display: swap;
 }
 
 body {
     background-color: #29CEDF;
     width: 100%;
     margin: 0;
-    font-family: munro
+    font-family: munro, sans-serif
 }
 
 footer {
