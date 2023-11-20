@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EXCLUSIVE: Impeached President Linked to Shadowy Democratic Plot to Undermine American Democracy</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+    <link rel="preload" href="../../munro_small.ttf" as="font" crossorigin="anonymous">
+
+
+    <meta property="og:title" content="EXCLUSIVE: Impeached President Linked to Shadowy Democratic Plot to Undermine American Democracy" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="EXCLUSIVE: Impeached President Linked to Shadowy Democratic Plot to Undermine American Democracy" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Otherworldly news articles (satire)">
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("28");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>EXCLUSIVE: Impeached President Linked to Shadowy Democratic Plot to Undermine American Democracy</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>Washington D.C. - In a shocking turn of events, it has come to light that the recently <a href="27.html">impeached</a> <a href="25.html">President</a> has been linked to a shadowy Democratic plot to undermine American democracy. According to sources close to the investigation, the <a href="7.html">President</a>, who wishes to remain anonymous, has been secretly working with high-ranking Democratic officials to subvert the will of the American people and undermine the democratic process.</p>
+<p>The plot, which has been code-named "Operation Backdoor Deal," involves the <a href="19.html">President</a> using his position of power to manipulate the political landscape and ensure that Democratic candidates are elected to key positions of power. Sources claim that the <a href="10.html">President</a> has been using his influence to funnel money and resources to Democratic campaigns, while simultaneously working to discredit and undermine Republican candidates.</p>
+<p>But that's not all - sources also allege that the President has been using his position to appoint unqualified and corrupt officials to key positions within the government, in order to further his own political agenda. This, coupled with his extensive use of executive privilege, has led many to suspect that the President is engaged in a systematic effort to consolidate power and undermine the rule of law.</p>
+<p>When reached for comment, a spokesperson for the President denied any wrongdoing, insisting that the President is committed to upholding the Constitution and the will of the American people. However, sources close to the investigation remain skeptical, suggesting that the President's actions are part of a larger effort to undermine the democratic process and maintain his grip on power.</p>
+<p>As the investigation continues to unfold, one thing is clear: the political landscape in America is more treacherous than ever before. With <a href="8.html">corruption</a> and cronyism running rampant, it's no wonder that the American people are growing increasingly disillusioned with the political process. But one thing is for sure - the truth will eventually come to light, and those responsible for these nefarious acts will be held accountable. Stay tuned for more updates on this developing story.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="29.html">Previous</a>
+            |
+            <a href="27.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a
+                href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
