@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BREAKING: Scientific Controversy Rocks US Election, Threatens to Upend Taxation System</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+    <link rel="preload" href="../../munro_small.ttf" as="font" crossorigin="anonymous">
+
+
+    <meta property="og:title" content="BREAKING: Scientific Controversy Rocks US Election, Threatens to Upend Taxation System" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="BREAKING: Scientific Controversy Rocks US Election, Threatens to Upend Taxation System" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Otherworldly news articles (satire)">
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("68");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`stories/data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            document.getElementById("controls").innerHTML = "";
+            var controls = "";
+            if (data[0].id > id) {
+                controls += `<a href="${id + 1}.html">Previous</a>`;
+            }
+
+            if (data[0].id > id && id > 1) {
+                controls += " | ";
+            }
+
+            if (id > 1) {
+                controls += `<a href="${id - 1}.html">Next</a>`;
+            }
+
+            document.getElementById("controls").innerHTML = controls;
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>BREAKING: Scientific Controversy Rocks US Election, Threatens to Upend Taxation System</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, a scientific <a href="14.html">controversy</a> has erupted in the <a href="64.html">United States</a>, threatening to upend the entire <a href="34.html">taxation</a> system. According to sources close to the matter, a team of renegade scientists have discovered a groundbreaking new theory that challenges the very foundations of the country's tax structure.</p>
+<p>The <a href="41.html">controversy</a> centers around the idea that taxes should be based on a person's "actual value to society," rather than their income or wealth. This radical proposal has sent shockwaves through the political establishment, with many lawmakers and political pundits scrambling to respond.</p>
+<p>"This is a direct attack on the very fabric of our society," fumed Senator John Smith, a fierce defender of the current tax system. "We cannot allow these rogue scientists to undermine the principles of fairness and equality that have guided our tax policies for centuries."</p>
+<p>But the scientists are unfazed, insisting that their theory is based on sound scientific principles and could lead to a more just and equitable society.</p>
+<p>"The current system is fundamentally flawed," said Dr. Jane Doe, the lead researcher on the project. "It rewards those who are already wealthy and powerful, while penalizing those who are less fortunate. Our proposal would ensure that everyone contributes their fair share, based on their actual value to society."</p>
+<p>The <a href="58.html">controversy</a> has already sparked a heated debate in the halls of Congress, with both sides digging in their heels. But as the debate rages on, one thing is clear: the future of the US <a href="17.html">taxation</a> system hangs in the balance.</p>
+<p>Will the country embrace this bold new proposal, or will it continue to cling to the status quo? Only time will tell. Stay tuned for further updates in this developing story.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <a href="69.html">Previous</a>
+            |
+            <a href="67.html">Next</a>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a
+                href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
