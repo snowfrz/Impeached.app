@@ -39,7 +39,7 @@
             console.log(data);
             for (var i = loadCount; i < Math.min(loadCount + loadStep, data.length); i++) {
                 document.getElementById("feed").innerHTML += `
-                <a href="stories/pages/${data[i].id}.html" style="text-decoration: none; color: #FF0000">
+                <a href="stories/pages/${data[i].address}" style="text-decoration: none; color: #FF0000">
                     <div class="featureContainer">
                         <div class="textContainer" style="width: 100%;">
                             <p>${data[i].title}</p>
