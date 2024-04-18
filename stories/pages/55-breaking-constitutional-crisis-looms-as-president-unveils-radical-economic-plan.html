@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BREAKING: Constitutional Crisis Looms as President Unveils Radical Economic Plan</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+    <link rel="preload" href="../../munro_small.ttf" as="font" crossorigin="anonymous">
+
+
+    <meta property="og:title" content="BREAKING: Constitutional Crisis Looms as President Unveils Radical Economic Plan" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="BREAKING: Constitutional Crisis Looms as President Unveils Radical Economic Plan" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Otherworldly news articles (satire)">
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("55");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`../data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            if (id >= data[0].id) {
+                document.getElementById("prevButton").innerHTML = "";
+            }
+
+            if (id >= data[0].id || id <= 1) {
+                document.getElementById("median").innerHTML = "";
+            }
+
+            if (id <= 1) {
+                document.getElementById("nextButton").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>BREAKING: Constitutional Crisis Looms as President Unveils Radical Economic Plan</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>WASHINGTON D.C. - In a shocking turn of events, <a href="30-impeached-president-faces-economic-crisis-will-congress-save-the-day.html">President</a> Franklin Delano Roosevelt (FDR) unveiled a radical new economic plan that has sparked widespread outrage and calls for impeachment. The plan, which aims to "shake up the old guard" and "breathe new life" into the nation's economy, has been met with fierce resistance from both sides of the political aisle.</p>
+<p>"This is a bold move, but it's one that's needed to get our economy out of the rut it's been in for decades," said FDR in a press conference. "We can't keep relying on the same old policies and expect different results. It's time for a change."</p>
+<p>But not everyone is convinced. Critics are accusing FDR of overstepping his authority and attempting to usurp the powers of Congress.</p>
+<p>"This is a clear violation of the <a href="54-shocking-new-evidence-reveals-constitutional-crisis-imminent-congress-plots-to.html">Constitution</a>," said Representative Jane Smith (R-TX). "The <a href="19-shocking-supreme-court-ruling-threatens-presidents-impeachment-will-he-survive.html">President</a> is trying to create a shadow government, one that will answer only to him. It's a dangerous precedent that could have far-reaching consequences."</p>
+<p>Others are worried about the potential economic impact of FDR's plan.</p>
+<p>"We're already seeing inflation and uncertainty in the market," said economist John Johnson. "This plan could make things worse, not better. We need to be careful about the unintended consequences of these kinds of drastic measures."</p>
+<p>As the drama unfolds, it's clear that this is no ordinary political showdown. The fate of the nation's economy and the very fabric of its democracy are on the line. Stay tuned for further updates in this developing story.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <span id="prevButton"><a href="56-supreme-court-rules-dystopian-future-looms-as-freedom-takes-a.html">Previous</a></span>
+            <span id="median">|</span>
+            <span id="nextButton"><a href="54-shocking-new-evidence-reveals-constitutional-crisis-imminent-congress-plots-to.html">Next</a></span>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a
+                href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
