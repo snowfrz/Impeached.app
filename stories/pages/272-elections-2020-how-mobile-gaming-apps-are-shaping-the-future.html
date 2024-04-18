@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elections 2020: How Mobile Gaming Apps Are Shaping the Future of Political Campaigns and Economic Outcomes</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+    <link rel="preload" href="../../munro_small.ttf" as="font" crossorigin="anonymous">
+
+
+    <meta property="og:title" content="Elections 2020: How Mobile Gaming Apps Are Shaping the Future of Political Campaigns and Economic Outcomes" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="Elections 2020: How Mobile Gaming Apps Are Shaping the Future of Political Campaigns and Economic Outcomes" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Otherworldly news articles (satire)">
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("272");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`../data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            if (id >= data[0].id) {
+                document.getElementById("prevButton").innerHTML = "";
+            }
+
+            if (id >= data[0].id || id <= 1) {
+                document.getElementById("median").innerHTML = "";
+            }
+
+            if (id <= 1) {
+                document.getElementById("nextButton").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>Elections 2020: How Mobile Gaming Apps Are Shaping the Future of Political Campaigns and Economic Outcomes</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>In a political climate where the line between truth and fiction is as blurred as the pixels on your smartphone screen, the 2020 <a href="125-impeached-presidents-digital-legacy-how-futurism-shaped-the-election-and.html">election</a>s have taken an unexpected turn. In a groundbreaking move that has left political pundits and economists alike scratching their heads, the leading candidates have turned to mobile gaming apps to engage voters and sway economic outcomes.</p>
+<p></p>
+<p>The frontrunner, a charismatic candidate known as "EconoMogul," has launched a campaign that integrates players of the popular mobile game "FarmVille" into a virtual political arena. Players can now cultivate not only crops but also political influence by participating in "EconoMogul's AgriPolitical Saga." The game's latest feature allows players to "vote" for policy measures by using in-game currency to sway the fictional "Senate of Silo Valley."</p>
+<p></p>
+<p>Meanwhile, the rival candidate, a seasoned politician dubbed "SciPol," has taken a different approach by integrating scientific literacy into a mobile game called "Quark Quest." This game, which bills itself as "the ultimate particle accelerator in your pocket," has players accelerating particles to energy levels that correspond to the candidate's policy proposals. The more energy you generate, the more you understand the nuances of "SciPol's" platform.</p>
+<p></p>
+<p>The implications of such a strategy are profound. Economists are divided on whether this new form of campaigning will lead to a more informed electorate or a population of gamers who can vote for policies without understanding their economic impact. "It's a paradigm shift," says Dr. SwipeRight, a leading social scientist specializing in the intersection of gaming and politics. "We're witnessing the birth of a new electorate—one that makes decisions based on the points they've earned in a game rather than the facts presented by scientists and economists."</p>
+<p></p>
+<p>The impact on the economy is equally uncharted territory. Some fear that the gamification of politics could lead to a surge in populism, as players might vote for policies that yield high scores rather than those that are economically sound. Others predict that this innovative approach could increase civic engagement among young voters, who are often the most avid mobile gamers.</p>
+<p></p>
+<p>As the <a href="117-shocking-twist-in-american-politics-how-the-impeachment-of-a.html">election</a> approaches, the world watches with bated breath to see how mobile gaming apps will shape the political landscape and the economic future of nations. Will the virtual farm become the new battleground for political ideologies, or will the quest for scientific enlightenment guide the electorate's choices? Only time—and perhaps the high score leaderboards—will tell.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <span id="prevButton"><a href="{{prev}}">Previous</a></span>
+            <span id="median">|</span>
+            <span id="nextButton"><a href="271-exclusive-as-dystopian-economics-takes-hold-senate-and-house-clash.html">Next</a></span>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a
+                href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
