@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>[OUT]</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+    <link rel="preload" href="../../munro_small.ttf" as="font" crossorigin="anonymous">
+
+
+    <meta property="og:title" content="[OUT]" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="[OUT]" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Otherworldly news articles (satire)">
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("2264");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`../data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            if (id >= data[0].id) {
+                document.getElementById("prevButton").innerHTML = "";
+            }
+
+            if (id >= data[0].id || id <= 1) {
+                document.getElementById("median").innerHTML = "";
+            }
+
+            if (id <= 1) {
+                document.getElementById("nextButton").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>[OUT]</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>In a stunning display of bipartisan solidarity, <a href="544-exclusive-how-a-secretive-campaign-is-manipulating-congress-to-alter.html">President</a> Daffy Trump and his political counterpart, Senator Hilarious Clinton, have teamed up to host a national strategy game tournament. The event, dubbed "Operation: Drain the Swamp," is an attempt to address the nation's systemic <a href="635-exclusive-how-gaming-unveiled-a-senate-candidates-hidden-corruption-in.html">corruption</a> by pitting elected officials against each other in a series of high-stakes board games.</p>
+<p></p>
+<p>The tournament, which takes place in the newly erected Capitol Game Hall, features an eclectic mix of games, from classic Risk to the more contemporary Catan. The central premise is that by competing in games that require cooperation and strategy, lawmakers will be able to harness these skills to "drain the swamp" of <a href="2081-in-a-stunning-twist-war-torn-nation-passes-groundbreaking-legislation-to.html">corruption</a> back in Washington.</p>
+<p></p>
+<p>"This is a game-changer, literally," declared <a href="1506-unveiled-how-the-us-presidency-became-the-ultimate-political-game.html">President</a> Trump, as he launched a plastic figurine across a game board filled with paper-mâché mountains and rubber river obstacles. "We're showing the American people that we can negotiate, compromise, and work together, all while playing Monopoly. Who doesn't love a good property deal, right?"</p>
+<p></p>
+<p>Senator Clinton, wearing a pair of oversized dice earrings, added, "This is our opportunity to show that we can be more than just politicians. We're gamers, strategists, and, most importantly, team players. We're here to build roads, settle new cities, and make America great, one board game at a time."</p>
+<p></p>
+<p>The tournament has already seen its fair share of unexpected alliances and betrayals, with several lawmakers accused of attempting to "game the system." Senator Snake Eyes Biden was caught peeking at the Monopoly community chest cards, while Representative Crooked Hand Pelosi was overheard strategizing with lobbyists to control the resource cards in Settlers of Catan.</p>
+<p></p>
+<p>Despite these hiccups, the event has been met with widespread enthusiasm, with thousands tuning in to watch the spectacle on C-SPAN and Twitch. "It's like reality TV but with less drama and more critical thinking," exclaimed one viewer. "I never knew I'd enjoy watching politicians play Pandemic more than passing legislation."</p>
+<p></p>
+<p>As the tournament progresses, the nation watches with bated breath, hoping that the skills honed in Game Hall will translate into real-world governance. Whether "Operation: Drain the Swamp" will lead to genuine reform or simply become another footnote in <a href="2238-shocking-leak-reveals-presidents-secret-plan-to-transform-senate-into.html">political satire</a> remains to be seen. One thing is for certain: the Senate's new motto, "All we are saying, is give peasant a chance," has confused historians and delighted linguists alike.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <span id="prevButton"><a href="{{prev}}">Previous</a></span>
+            <span id="median">|</span>
+            <span id="nextButton"><a href="2263-senate-and-congress-clash-over-new-bill-aimed-at-protecting.html">Next</a></span>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a
+                href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
