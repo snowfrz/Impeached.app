@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>[RESP]</title>
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" sizes="any">
+    <link rel="preload" href="../../munro_small.ttf" as="font" crossorigin="anonymous">
+
+
+    <meta property="og:title" content="[RESP]" />
+    <meta property="og:description" content="An Impeached 2 Story" />
+    <meta property="og:image" content="https://www.impeached.app/Base.png" />
+    <meta property="og:url" content="https://www.impeached.app/" />
+
+    <meta name="twitter:title" content="[RESP]" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="An Impeached 2 Story" />
+    <meta name="twitter:image" content="https://www.impeached.app/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Otherworldly news articles (satire)">
+
+    <script type="text/javascript">
+        var loadCount = 0;
+        var loadStep = 50;
+
+        const id = parseInt("645");
+
+        var addControls = async () => {
+            const global = await (await fetch("../data/global.json")).json();
+            const latestData = await (await fetch(`../data/data${global.currentFile}.json`)).json();
+            const oldData = global.currentFile > 1 ? await (await fetch(`../data/data${global.currentFile - 1}.json`)).json() : [];
+            const data = [...latestData, ...oldData];
+
+            if (id >= data[0].id) {
+                document.getElementById("prevButton").innerHTML = "";
+            }
+
+            if (id >= data[0].id || id <= 1) {
+                document.getElementById("median").innerHTML = "";
+            }
+
+            if (id <= 1) {
+                document.getElementById("nextButton").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body onload="addControls()">
+    <div class="headerContainer">
+        <a href="../../get.html"><img id="headerImage" alt="Impeached 2" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
+
+    <div class="announcementBar">
+        <p id="comingSoon">Download now!</p>
+    </div>
+
+    <div class="linkBar">
+        <div class="linkContainer">
+            <a href="https://apps.apple.com/us/app/impeached-2/id1663664237">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en">Android</a>
+            <a href="https://store.steampowered.com/app/2435770/Impeached_2/">Steam</a>
+        </div>
+    </div>
+
+    <div class="textHeader">
+        <h1>Impeached 2</h1>
+        <p>Become President of the United States in this political satire strategy game</p>
+    </div>
+
+    <div class="features" id="feed">
+        <h1>[RESP]</h1>
+        <div class="featureContainer">
+            <div class="textContainer" style="width: 100%; text-align: left;">
+                <p style="font-weight: bold;">Impeached 2 is an armchair politician's dream. <a
+                        href="../../get.html">Play today!</a></p>
+                <p></p>
+<p>In a stunning turn of events that has left political analysts scratching their heads and citizens glued to their mobile devices, the nation's political landscape has been inadvertently reshaped by a new mobile game sensation, "Poli-Tactics: The Game of Nations." The game, which combines the strategic depth of classic board games with the political intrigue of Washington D.C., has become the unexpected training ground for both politicians and their loyal followers.</p>
+<p></p>
+<p>The game's creator, a mysterious figure known only as Dr. Stratagem, has claimed that "Poli-Tactics" was designed to 'educate' citizens on the complexities of governance. However, it has since become apparent that the true purpose of the game was to create an army of political operatives who could manipulate the political system from the comfort of their smartphones.</p>
+<p></p>
+<p>The game's viral success has led to a series of bizarre political maneuvers. For instance, Senator Smartypants was caught in a late-night session, frantically swiping his screen to counteract a surprise legislative attack from the opposing faction. "I was just optimizing my legislative agenda," he explained, "It's all about strategic positioning and resource allocation. You've got to think several moves ahead."</p>
+<p></p>
+<p>Meanwhile, the Speaker of the House, Representative LobbyDub, has reportedly been seen drafting legislation that mirrors the game's in-app purchases, leading to a surge in virtual currency trading on Capitol Hill. "It's all about monetizing your political capital," she said with a wink. "In both the game and real life, you've got to keep the economy flowing to stay in power."</p>
+<p></p>
+<p>The White House has not been immune to the game's influence. President Gamer has been rumored to be holding classified briefings in the Situation Room, not to discuss national security threats, but to strategize on how to counter a new 'super PAC' formed by the game's top players. "We're playing to win," the President proclaimed, "and in this game, every vote counts."</p>
+<p></p>
+<p>As the political world becomes increasingly intertwined with the virtual one, many are left to wonder if our elected officials are truly in charge, or if they are merely avatars in a grand, digital chess game orchestrated by the enigmatic Dr. Stratagem. Only time will tell if "Poli-Tactics" will lead to a more informed electorate, or if it's just another way for politicians to avoid facing the real issues.</p>
+<p></p>
+<p>In the meantime, the game's popularity shows no signs of slowing down, with players across the nation vying for control of the virtual Oval Office. As the lines between reality and <a href="483-shocking-how-mobile-strategy-games-are-becoming-the-unlikely-new.html">strategy games</a> continue to blur, one thing is clear: in the world of "Poli-Tactics," every swipe counts, and the stakes have never been higher.</p>
+                <p style="font-weight: bold;">Can't get enough of politics? <a href="../../get.html">Play Impeached
+                        2</a> and become President of the U.S. today!</p>
+                <p style="color: #00000040; font-size: small;">This article was automagically written, and intended only
+                    for entertainment purposes.</p>
+            </div>
+        </div>
+
+        <span id="controls" style="text-align: center;">
+            <span id="prevButton"><a href="{{prev}}">Previous</a></span>
+            <span id="median">|</span>
+            <span id="nextButton"><a href="644-supreme-showdown-how-the-courts-ruling-could-redefine-the-future.html">Next</a></span>
+        </span>
+
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: large; text-align: center;">Or check out <a
+                href="../../stories.html">the newest articles</a></p>
+    </div>
+</body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2018-2023 Justin Proulx</a></p>
+</footer>
+
+</html>
