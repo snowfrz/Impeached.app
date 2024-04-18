@@ -162,7 +162,7 @@ footer a:hover {
 
     .features {
         padding: 30px 30px;
-        font-size: 3em;
+        font-size: 1.75em;
     }
 
     .featureContainer {
@@ -196,11 +196,11 @@ footer a:hover {
     }
 
     .textHeader h1 {
-        font-size: 1.75em;
+        font-size: 3em;
     }
 
     .textHeader p {
-        font-size: 1.25em;
+        font-size: 1.5em;
     }
 
     #comingSoon {
