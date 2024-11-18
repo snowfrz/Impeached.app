@@ -20,7 +20,6 @@
     <meta name="twitter:creator" content="@JustinAlexP" />
 
     <script type="text/javascript">
-        const android = [/Android/i];
         const iOS = [
             /iPhone/i,
             /iPad/i,
@@ -28,12 +27,7 @@
         ];
 
         var redirect = () => {
-            if (android.some((item) => {
-                return navigator.userAgent.match(item);
-            })) {
-                window.location.href = "https://play.google.com/store/apps/details?id=com.lbastudios.Impeached2&hl=en";
-                return;
-            } else if (iOS.some((item) => {
+            if (iOS.some((item) => {
                 return navigator.userAgent.match(item);
             })) {
                 window.location.href = "https://apps.apple.com/us/app/impeached-2/id1663664237";
