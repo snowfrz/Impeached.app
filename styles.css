@@ -199,7 +199,7 @@ footer a:hover {
     }
 
     #headerImage {
-        content: url("Library.png");
+        content: url("./Library.png");
     }
 }
 
@@ -214,7 +214,7 @@ footer a:hover {
 }
 
 #headerImage {
-    content: url("Base.png");
+    content: url("./Base.png");
 }
 
 #wordmarkImage {
