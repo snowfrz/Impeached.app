@@ -197,10 +197,6 @@ footer a:hover {
     #comingSoon {
         font-size: 1.75em;
     }
-
-    #headerImage {
-        content: url("Library.png");
-    }
 }
 
 /* get.html */
@@ -211,10 +207,6 @@ footer a:hover {
 #getBody {
     width: 100%;
     height: 100%;
-}
-
-#headerImage {
-    content: url("Base.png");
 }
 
 #wordmarkImage {
