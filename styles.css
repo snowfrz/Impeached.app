@@ -1,18 +1,18 @@
 @font-face {
     font-family: munro;
-    src: url("munro_small.ttf");
+    src: url("https://www.impeached.app/munro_small.ttf");
     font-display: swap;
 }
 
 body {
-    background-color: #29CEDF;
+    background-color: #365A5E;
     width: 100%;
     margin: 0;
     font-family: munro, sans-serif
 }
 
 footer {
-    background-color: #365A5E;
+    background-color: #00000000;
     color: white;
     text-align: center;
     padding: 5px 15px;
@@ -44,8 +44,7 @@ footer a:hover {
     display: flex;
     align-items:center;
     justify-content:center;
-
-    background-color: #365A5E;
+    background-color: #00000000;
     width: 100%;
     height: 75px;
     top: 0;
@@ -53,7 +52,7 @@ footer a:hover {
 }
 
 .linkBar {
-    background-color: #62D4E0;
+    background-color: #00000000;
     margin: 0;
     padding: 15px;
 }
@@ -82,7 +81,7 @@ footer a:hover {
 }
 
 .textHeader {
-    background-color: #365A5E;
+    background-color: #00000000;
     margin: 0;
     padding: 50px;
     color: #ffffff;
@@ -112,29 +111,34 @@ footer a:hover {
     max-width: 100vw;
 }
 
-.featureContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px 0px;
-    padding: 0;
+.features p {
+    margin: 10px 0;
 }
 
-.featureContainer p {
+.features ul {
     margin: 0;
-    text-align: center;
-    padding: 50px;
 }
 
-.ssContainer {
-    width: 50%;
-    border: black 20px solid;
-    box-shadow: rgba(0, 0, 0, 0.368) 0px 10px 10px;
+.screenshotArea {
+    background-color: #5e9fa6;
+    display: block; 
+    width: 100%; 
+    margin: 0; 
+    text-align: center; 
+    overflow-x: scroll; 
+    white-space: nowrap;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-.ssImage {
-    display: block;
-    margin: 0;
+.screenshotArea img {
+    max-height: 500px; 
+    margin: 15px; 
+    border-radius: 20px;
+}
+
+.screenshotArea a {
+    text-decoration: none;
 }
 
 .textContainer {
@@ -151,22 +155,6 @@ footer a:hover {
 
     .features {
         padding: 30px 30px;
-        font-size: 3em;
-    }
-
-    .featureContainer {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .featureContainer p {
-        text-align: center;
-        font-size: 0.75em;
-        padding: 20px;
-    }
-
-    .ssContainer {
-        width: 100%;
     }
 
     .textContainer {
@@ -188,10 +176,6 @@ footer a:hover {
 
     .textHeader h1 {
         font-size: 3em;
-    }
-
-    .textHeader p {
-        font-size: 1.5em;
     }
 
     #comingSoon {
